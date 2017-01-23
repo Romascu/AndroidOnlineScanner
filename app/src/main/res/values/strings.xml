@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources tools:ignore="MissingTranslation" xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="app_name">Online Scanner</string>
+    <string name="app_description">This is a utility for getting information about the APKs that are installed on your device. Starting with a list of all of the apps that you have installed on your device, it will show you the APK signature with a single touch, and provides links to virustotal.com and androidobservatory.org to easily access the profiles of that APK. It will also let you export the signing certificate and generate ApkSignaturePin pin files for use with the TrustedIntents library.</string>
+    <string name="icon">icon</string>
+    <string name="action_settings">Settings</string>
+    <string name="no_applications_found">No applications found</string>
+    <string name="details">Details</string>
+    <string name="virustotal">VirusTotal</string>
+    <string name="by_package_name">Package Name</string>
+    <string name="by_apk_hash">APK Hash</string>
+    <string name="by_signing_certificate">Signing Certificate</string>
+    <string name="open_in_browser">Open in Browser</string>
+    <string name="share">Share</string>
+    <string name="share_url_using">Share URL using:</string>
+    <string name="save">Save…</string>
+    <string name="save_cert_using">Save certificate using:</string>
+    <string name="generate_pin">Generate Pin</string>
+    <string name="package_name">Package Name:</string>
+    <string name="apk_path">APK Path:</string>
+    <string name="public_apk_path">Public APK Path:</string>
+    <string name="data_directory">Data Directory:</string>
+    <string name="key_type">Key Type:</string>
+    <string name="signature_type">Signature Type:</string>
+    <string name="target_sdk_version">Target SDK Version:</string>
+    <string name="version">Version:</string>
+    <string name="created">Created:</string>
+    <string name="expires">Expires:</string>
+    <string name="subject">Subject:</string>
+    <string name="issuer">Issuer:</string>
+    <string name="serial">Serial:</string>
+    <!-- error messages -->
+    <string name="error_cannot_make_fingerprint">Cannot make fingerprint of signing certificate!</string>
+    <string name="error_no_app_entry">No app entry found!</string>
+
+</resources>

@@ -1,0 +1,896 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Manifest Merging:
+-----------------
+Your project uses libraries that provide manifests, and your Eclipse
+project did not explicitly turn on manifest merging. In Android Gradle
+projects, manifests are always merged (meaning that contents from your
+libraries' manifests will be merged into the app manifest. If you had
+manually copied contents from library manifests into your app manifest
+you may need to remove these for the app to build correctly.
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* .fdroid.yml
+* .gitignore
+* ChangeLog
+* LICENSE.txt
+* README.md
+* compare-to-official-release
+* custom_rules.xml
+* description\
+* description\es.xlf
+* description\fi.xlf
+* description\fr.xlf
+* description\ja.xlf
+* description\nb.xlf
+* description\pt-rPT.xlf
+* description\ru.xlf
+* description\sl.xlf
+* description\source.xlf
+* description\tr.xlf
+* description\zh-rCN.xlf
+* feature-graphic.png
+* fix-ellipsis
+* ic_launcher-web.png
+* jenkins-build
+* make-release-build
+* setup-ant
+* tools\
+* tools\fix-ellipsis.sh
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:21.0.3
+android-support-v7-appcompat.jar => com.android.support:appcompat-v7:21.0.3
+
+Replaced Libraries with Dependencies:
+-------------------------------------
+The importer recognized the following library projects as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the source files in your project were of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the library replacement in the import wizard and try
+again:
+
+android-support-v7-appcompat => [com.android.support:appcompat-v7:21.0.3]
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\ => app\src\main\java\
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\.classpath => app\src\main\resources\appcompat\.classpath
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\.project => app\src\main\resources\appcompat\.project
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\AndroidManifest.xml => app\src\main\resources\appcompat\AndroidManifest.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\project.properties => app\src\main\resources\appcompat\project.properties
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\README.txt => app\src\main\resources\appcompat\README.txt
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res-public\values\public_attrs.xml => app\src\main\resources\appcompat\res-public\values\public_attrs.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res-public\values\public_layouts.xml => app\src\main\resources\appcompat\res-public\values\public_layouts.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res-public\values\public_styles.xml => app\src\main\resources\appcompat\res-public\values\public_styles.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\anim\abc_fade_in.xml => app\src\main\resources\appcompat\res\anim\abc_fade_in.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\anim\abc_fade_out.xml => app\src\main\resources\appcompat\res\anim\abc_fade_out.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\anim\abc_grow_fade_in_from_bottom.xml => app\src\main\resources\appcompat\res\anim\abc_grow_fade_in_from_bottom.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\anim\abc_popup_enter.xml => app\src\main\resources\appcompat\res\anim\abc_popup_enter.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\anim\abc_popup_exit.xml => app\src\main\resources\appcompat\res\anim\abc_popup_exit.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\anim\abc_shrink_fade_out_from_bottom.xml => app\src\main\resources\appcompat\res\anim\abc_shrink_fade_out_from_bottom.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\anim\abc_slide_in_bottom.xml => app\src\main\resources\appcompat\res\anim\abc_slide_in_bottom.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\anim\abc_slide_in_top.xml => app\src\main\resources\appcompat\res\anim\abc_slide_in_top.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\anim\abc_slide_out_bottom.xml => app\src\main\resources\appcompat\res\anim\abc_slide_out_bottom.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\anim\abc_slide_out_top.xml => app\src\main\resources\appcompat\res\anim\abc_slide_out_top.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\color-v11\abc_background_cache_hint_selector_material_dark.xml => app\src\main\resources\appcompat\res\color-v11\abc_background_cache_hint_selector_material_dark.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\color-v11\abc_background_cache_hint_selector_material_light.xml => app\src\main\resources\appcompat\res\color-v11\abc_background_cache_hint_selector_material_light.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\color-v23\abc_color_highlight_material.xml => app\src\main\resources\appcompat\res\color-v23\abc_color_highlight_material.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\color\abc_background_cache_hint_selector_material_dark.xml => app\src\main\resources\appcompat\res\color\abc_background_cache_hint_selector_material_dark.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\color\abc_background_cache_hint_selector_material_light.xml => app\src\main\resources\appcompat\res\color\abc_background_cache_hint_selector_material_light.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\color\abc_primary_text_disable_only_material_dark.xml => app\src\main\resources\appcompat\res\color\abc_primary_text_disable_only_material_dark.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\color\abc_primary_text_disable_only_material_light.xml => app\src\main\resources\appcompat\res\color\abc_primary_text_disable_only_material_light.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\color\abc_primary_text_material_dark.xml => app\src\main\resources\appcompat\res\color\abc_primary_text_material_dark.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\color\abc_primary_text_material_light.xml => app\src\main\resources\appcompat\res\color\abc_primary_text_material_light.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\color\abc_search_url_text.xml => app\src\main\resources\appcompat\res\color\abc_search_url_text.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\color\abc_secondary_text_material_dark.xml => app\src\main\resources\appcompat\res\color\abc_secondary_text_material_dark.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\color\abc_secondary_text_material_light.xml => app\src\main\resources\appcompat\res\color\abc_secondary_text_material_light.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\color\switch_thumb_material_dark.xml => app\src\main\resources\appcompat\res\color\switch_thumb_material_dark.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\color\switch_thumb_material_light.xml => app\src\main\resources\appcompat\res\color\switch_thumb_material_light.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-hdpi\abc_ab_share_pack_mtrl_alpha.9.png => app\src\main\resources\appcompat\res\drawable-hdpi\abc_ab_share_pack_mtrl_alpha.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-hdpi\abc_btn_check_to_on_mtrl_000.png => app\src\main\resources\appcompat\res\drawable-hdpi\abc_btn_check_to_on_mtrl_000.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-hdpi\abc_btn_check_to_on_mtrl_015.png => app\src\main\resources\appcompat\res\drawable-hdpi\abc_btn_check_to_on_mtrl_015.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-hdpi\abc_btn_radio_to_on_mtrl_000.png => app\src\main\resources\appcompat\res\drawable-hdpi\abc_btn_radio_to_on_mtrl_000.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-hdpi\abc_btn_radio_to_on_mtrl_015.png => app\src\main\resources\appcompat\res\drawable-hdpi\abc_btn_radio_to_on_mtrl_015.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-hdpi\abc_btn_rating_star_off_mtrl_alpha.png => app\src\main\resources\appcompat\res\drawable-hdpi\abc_btn_rating_star_off_mtrl_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-hdpi\abc_btn_rating_star_on_mtrl_alpha.png => app\src\main\resources\appcompat\res\drawable-hdpi\abc_btn_rating_star_on_mtrl_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-hdpi\abc_btn_switch_to_on_mtrl_00001.9.png => app\src\main\resources\appcompat\res\drawable-hdpi\abc_btn_switch_to_on_mtrl_00001.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-hdpi\abc_btn_switch_to_on_mtrl_00012.9.png => app\src\main\resources\appcompat\res\drawable-hdpi\abc_btn_switch_to_on_mtrl_00012.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-hdpi\abc_cab_background_top_mtrl_alpha.9.png => app\src\main\resources\appcompat\res\drawable-hdpi\abc_cab_background_top_mtrl_alpha.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-hdpi\abc_ic_ab_back_mtrl_am_alpha.png => app\src\main\resources\appcompat\res\drawable-hdpi\abc_ic_ab_back_mtrl_am_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-hdpi\abc_ic_clear_mtrl_alpha.png => app\src\main\resources\appcompat\res\drawable-hdpi\abc_ic_clear_mtrl_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-hdpi\abc_ic_commit_search_api_mtrl_alpha.png => app\src\main\resources\appcompat\res\drawable-hdpi\abc_ic_commit_search_api_mtrl_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-hdpi\abc_ic_go_search_api_mtrl_alpha.png => app\src\main\resources\appcompat\res\drawable-hdpi\abc_ic_go_search_api_mtrl_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-hdpi\abc_ic_menu_copy_mtrl_am_alpha.png => app\src\main\resources\appcompat\res\drawable-hdpi\abc_ic_menu_copy_mtrl_am_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-hdpi\abc_ic_menu_cut_mtrl_alpha.png => app\src\main\resources\appcompat\res\drawable-hdpi\abc_ic_menu_cut_mtrl_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-hdpi\abc_ic_menu_moreoverflow_mtrl_alpha.png => app\src\main\resources\appcompat\res\drawable-hdpi\abc_ic_menu_moreoverflow_mtrl_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-hdpi\abc_ic_menu_paste_mtrl_am_alpha.png => app\src\main\resources\appcompat\res\drawable-hdpi\abc_ic_menu_paste_mtrl_am_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-hdpi\abc_ic_menu_selectall_mtrl_alpha.png => app\src\main\resources\appcompat\res\drawable-hdpi\abc_ic_menu_selectall_mtrl_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-hdpi\abc_ic_menu_share_mtrl_alpha.png => app\src\main\resources\appcompat\res\drawable-hdpi\abc_ic_menu_share_mtrl_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-hdpi\abc_ic_search_api_mtrl_alpha.png => app\src\main\resources\appcompat\res\drawable-hdpi\abc_ic_search_api_mtrl_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-hdpi\abc_ic_star_black_16dp.png => app\src\main\resources\appcompat\res\drawable-hdpi\abc_ic_star_black_16dp.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-hdpi\abc_ic_star_black_36dp.png => app\src\main\resources\appcompat\res\drawable-hdpi\abc_ic_star_black_36dp.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-hdpi\abc_ic_star_half_black_16dp.png => app\src\main\resources\appcompat\res\drawable-hdpi\abc_ic_star_half_black_16dp.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-hdpi\abc_ic_star_half_black_36dp.png => app\src\main\resources\appcompat\res\drawable-hdpi\abc_ic_star_half_black_36dp.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-hdpi\abc_ic_voice_search_api_mtrl_alpha.png => app\src\main\resources\appcompat\res\drawable-hdpi\abc_ic_voice_search_api_mtrl_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-hdpi\abc_list_divider_mtrl_alpha.9.png => app\src\main\resources\appcompat\res\drawable-hdpi\abc_list_divider_mtrl_alpha.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-hdpi\abc_list_focused_holo.9.png => app\src\main\resources\appcompat\res\drawable-hdpi\abc_list_focused_holo.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-hdpi\abc_list_longpressed_holo.9.png => app\src\main\resources\appcompat\res\drawable-hdpi\abc_list_longpressed_holo.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-hdpi\abc_list_pressed_holo_dark.9.png => app\src\main\resources\appcompat\res\drawable-hdpi\abc_list_pressed_holo_dark.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-hdpi\abc_list_pressed_holo_light.9.png => app\src\main\resources\appcompat\res\drawable-hdpi\abc_list_pressed_holo_light.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-hdpi\abc_list_selector_disabled_holo_dark.9.png => app\src\main\resources\appcompat\res\drawable-hdpi\abc_list_selector_disabled_holo_dark.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-hdpi\abc_list_selector_disabled_holo_light.9.png => app\src\main\resources\appcompat\res\drawable-hdpi\abc_list_selector_disabled_holo_light.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-hdpi\abc_menu_hardkey_panel_mtrl_mult.9.png => app\src\main\resources\appcompat\res\drawable-hdpi\abc_menu_hardkey_panel_mtrl_mult.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-hdpi\abc_popup_background_mtrl_mult.9.png => app\src\main\resources\appcompat\res\drawable-hdpi\abc_popup_background_mtrl_mult.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-hdpi\abc_scrubber_control_off_mtrl_alpha.png => app\src\main\resources\appcompat\res\drawable-hdpi\abc_scrubber_control_off_mtrl_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-hdpi\abc_scrubber_control_to_pressed_mtrl_000.png => app\src\main\resources\appcompat\res\drawable-hdpi\abc_scrubber_control_to_pressed_mtrl_000.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-hdpi\abc_scrubber_control_to_pressed_mtrl_005.png => app\src\main\resources\appcompat\res\drawable-hdpi\abc_scrubber_control_to_pressed_mtrl_005.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-hdpi\abc_scrubber_primary_mtrl_alpha.9.png => app\src\main\resources\appcompat\res\drawable-hdpi\abc_scrubber_primary_mtrl_alpha.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-hdpi\abc_scrubber_track_mtrl_alpha.9.png => app\src\main\resources\appcompat\res\drawable-hdpi\abc_scrubber_track_mtrl_alpha.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-hdpi\abc_spinner_mtrl_am_alpha.9.png => app\src\main\resources\appcompat\res\drawable-hdpi\abc_spinner_mtrl_am_alpha.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-hdpi\abc_switch_track_mtrl_alpha.9.png => app\src\main\resources\appcompat\res\drawable-hdpi\abc_switch_track_mtrl_alpha.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-hdpi\abc_tab_indicator_mtrl_alpha.9.png => app\src\main\resources\appcompat\res\drawable-hdpi\abc_tab_indicator_mtrl_alpha.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-hdpi\abc_textfield_activated_mtrl_alpha.9.png => app\src\main\resources\appcompat\res\drawable-hdpi\abc_textfield_activated_mtrl_alpha.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-hdpi\abc_textfield_default_mtrl_alpha.9.png => app\src\main\resources\appcompat\res\drawable-hdpi\abc_textfield_default_mtrl_alpha.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-hdpi\abc_textfield_search_activated_mtrl_alpha.9.png => app\src\main\resources\appcompat\res\drawable-hdpi\abc_textfield_search_activated_mtrl_alpha.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-hdpi\abc_textfield_search_default_mtrl_alpha.9.png => app\src\main\resources\appcompat\res\drawable-hdpi\abc_textfield_search_default_mtrl_alpha.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-ldrtl-hdpi\abc_ic_ab_back_mtrl_am_alpha.png => app\src\main\resources\appcompat\res\drawable-ldrtl-hdpi\abc_ic_ab_back_mtrl_am_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-ldrtl-hdpi\abc_ic_menu_copy_mtrl_am_alpha.png => app\src\main\resources\appcompat\res\drawable-ldrtl-hdpi\abc_ic_menu_copy_mtrl_am_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-ldrtl-hdpi\abc_ic_menu_cut_mtrl_alpha.png => app\src\main\resources\appcompat\res\drawable-ldrtl-hdpi\abc_ic_menu_cut_mtrl_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-ldrtl-hdpi\abc_spinner_mtrl_am_alpha.9.png => app\src\main\resources\appcompat\res\drawable-ldrtl-hdpi\abc_spinner_mtrl_am_alpha.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-ldrtl-mdpi\abc_ic_ab_back_mtrl_am_alpha.png => app\src\main\resources\appcompat\res\drawable-ldrtl-mdpi\abc_ic_ab_back_mtrl_am_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-ldrtl-mdpi\abc_ic_menu_copy_mtrl_am_alpha.png => app\src\main\resources\appcompat\res\drawable-ldrtl-mdpi\abc_ic_menu_copy_mtrl_am_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-ldrtl-mdpi\abc_ic_menu_cut_mtrl_alpha.png => app\src\main\resources\appcompat\res\drawable-ldrtl-mdpi\abc_ic_menu_cut_mtrl_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-ldrtl-mdpi\abc_spinner_mtrl_am_alpha.9.png => app\src\main\resources\appcompat\res\drawable-ldrtl-mdpi\abc_spinner_mtrl_am_alpha.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-ldrtl-xhdpi\abc_ic_ab_back_mtrl_am_alpha.png => app\src\main\resources\appcompat\res\drawable-ldrtl-xhdpi\abc_ic_ab_back_mtrl_am_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-ldrtl-xhdpi\abc_ic_menu_copy_mtrl_am_alpha.png => app\src\main\resources\appcompat\res\drawable-ldrtl-xhdpi\abc_ic_menu_copy_mtrl_am_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-ldrtl-xhdpi\abc_ic_menu_cut_mtrl_alpha.png => app\src\main\resources\appcompat\res\drawable-ldrtl-xhdpi\abc_ic_menu_cut_mtrl_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-ldrtl-xhdpi\abc_spinner_mtrl_am_alpha.9.png => app\src\main\resources\appcompat\res\drawable-ldrtl-xhdpi\abc_spinner_mtrl_am_alpha.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-ldrtl-xxhdpi\abc_ic_ab_back_mtrl_am_alpha.png => app\src\main\resources\appcompat\res\drawable-ldrtl-xxhdpi\abc_ic_ab_back_mtrl_am_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-ldrtl-xxhdpi\abc_ic_menu_copy_mtrl_am_alpha.png => app\src\main\resources\appcompat\res\drawable-ldrtl-xxhdpi\abc_ic_menu_copy_mtrl_am_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-ldrtl-xxhdpi\abc_ic_menu_cut_mtrl_alpha.png => app\src\main\resources\appcompat\res\drawable-ldrtl-xxhdpi\abc_ic_menu_cut_mtrl_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-ldrtl-xxhdpi\abc_spinner_mtrl_am_alpha.9.png => app\src\main\resources\appcompat\res\drawable-ldrtl-xxhdpi\abc_spinner_mtrl_am_alpha.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-ldrtl-xxxhdpi\abc_ic_ab_back_mtrl_am_alpha.png => app\src\main\resources\appcompat\res\drawable-ldrtl-xxxhdpi\abc_ic_ab_back_mtrl_am_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-ldrtl-xxxhdpi\abc_ic_menu_copy_mtrl_am_alpha.png => app\src\main\resources\appcompat\res\drawable-ldrtl-xxxhdpi\abc_ic_menu_copy_mtrl_am_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-ldrtl-xxxhdpi\abc_ic_menu_cut_mtrl_alpha.png => app\src\main\resources\appcompat\res\drawable-ldrtl-xxxhdpi\abc_ic_menu_cut_mtrl_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-ldrtl-xxxhdpi\abc_spinner_mtrl_am_alpha.9.png => app\src\main\resources\appcompat\res\drawable-ldrtl-xxxhdpi\abc_spinner_mtrl_am_alpha.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-mdpi\abc_ab_share_pack_mtrl_alpha.9.png => app\src\main\resources\appcompat\res\drawable-mdpi\abc_ab_share_pack_mtrl_alpha.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-mdpi\abc_btn_check_to_on_mtrl_000.png => app\src\main\resources\appcompat\res\drawable-mdpi\abc_btn_check_to_on_mtrl_000.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-mdpi\abc_btn_check_to_on_mtrl_015.png => app\src\main\resources\appcompat\res\drawable-mdpi\abc_btn_check_to_on_mtrl_015.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-mdpi\abc_btn_radio_to_on_mtrl_000.png => app\src\main\resources\appcompat\res\drawable-mdpi\abc_btn_radio_to_on_mtrl_000.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-mdpi\abc_btn_radio_to_on_mtrl_015.png => app\src\main\resources\appcompat\res\drawable-mdpi\abc_btn_radio_to_on_mtrl_015.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-mdpi\abc_btn_rating_star_off_mtrl_alpha.png => app\src\main\resources\appcompat\res\drawable-mdpi\abc_btn_rating_star_off_mtrl_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-mdpi\abc_btn_rating_star_on_mtrl_alpha.png => app\src\main\resources\appcompat\res\drawable-mdpi\abc_btn_rating_star_on_mtrl_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-mdpi\abc_btn_switch_to_on_mtrl_00001.9.png => app\src\main\resources\appcompat\res\drawable-mdpi\abc_btn_switch_to_on_mtrl_00001.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-mdpi\abc_btn_switch_to_on_mtrl_00012.9.png => app\src\main\resources\appcompat\res\drawable-mdpi\abc_btn_switch_to_on_mtrl_00012.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-mdpi\abc_cab_background_top_mtrl_alpha.9.png => app\src\main\resources\appcompat\res\drawable-mdpi\abc_cab_background_top_mtrl_alpha.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-mdpi\abc_ic_ab_back_mtrl_am_alpha.png => app\src\main\resources\appcompat\res\drawable-mdpi\abc_ic_ab_back_mtrl_am_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-mdpi\abc_ic_clear_mtrl_alpha.png => app\src\main\resources\appcompat\res\drawable-mdpi\abc_ic_clear_mtrl_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-mdpi\abc_ic_commit_search_api_mtrl_alpha.png => app\src\main\resources\appcompat\res\drawable-mdpi\abc_ic_commit_search_api_mtrl_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-mdpi\abc_ic_go_search_api_mtrl_alpha.png => app\src\main\resources\appcompat\res\drawable-mdpi\abc_ic_go_search_api_mtrl_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-mdpi\abc_ic_menu_copy_mtrl_am_alpha.png => app\src\main\resources\appcompat\res\drawable-mdpi\abc_ic_menu_copy_mtrl_am_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-mdpi\abc_ic_menu_cut_mtrl_alpha.png => app\src\main\resources\appcompat\res\drawable-mdpi\abc_ic_menu_cut_mtrl_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-mdpi\abc_ic_menu_moreoverflow_mtrl_alpha.png => app\src\main\resources\appcompat\res\drawable-mdpi\abc_ic_menu_moreoverflow_mtrl_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-mdpi\abc_ic_menu_paste_mtrl_am_alpha.png => app\src\main\resources\appcompat\res\drawable-mdpi\abc_ic_menu_paste_mtrl_am_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-mdpi\abc_ic_menu_selectall_mtrl_alpha.png => app\src\main\resources\appcompat\res\drawable-mdpi\abc_ic_menu_selectall_mtrl_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-mdpi\abc_ic_menu_share_mtrl_alpha.png => app\src\main\resources\appcompat\res\drawable-mdpi\abc_ic_menu_share_mtrl_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-mdpi\abc_ic_search_api_mtrl_alpha.png => app\src\main\resources\appcompat\res\drawable-mdpi\abc_ic_search_api_mtrl_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-mdpi\abc_ic_star_black_16dp.png => app\src\main\resources\appcompat\res\drawable-mdpi\abc_ic_star_black_16dp.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-mdpi\abc_ic_star_black_36dp.png => app\src\main\resources\appcompat\res\drawable-mdpi\abc_ic_star_black_36dp.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-mdpi\abc_ic_star_half_black_16dp.png => app\src\main\resources\appcompat\res\drawable-mdpi\abc_ic_star_half_black_16dp.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-mdpi\abc_ic_star_half_black_36dp.png => app\src\main\resources\appcompat\res\drawable-mdpi\abc_ic_star_half_black_36dp.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-mdpi\abc_ic_voice_search_api_mtrl_alpha.png => app\src\main\resources\appcompat\res\drawable-mdpi\abc_ic_voice_search_api_mtrl_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-mdpi\abc_list_divider_mtrl_alpha.9.png => app\src\main\resources\appcompat\res\drawable-mdpi\abc_list_divider_mtrl_alpha.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-mdpi\abc_list_focused_holo.9.png => app\src\main\resources\appcompat\res\drawable-mdpi\abc_list_focused_holo.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-mdpi\abc_list_longpressed_holo.9.png => app\src\main\resources\appcompat\res\drawable-mdpi\abc_list_longpressed_holo.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-mdpi\abc_list_pressed_holo_dark.9.png => app\src\main\resources\appcompat\res\drawable-mdpi\abc_list_pressed_holo_dark.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-mdpi\abc_list_pressed_holo_light.9.png => app\src\main\resources\appcompat\res\drawable-mdpi\abc_list_pressed_holo_light.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-mdpi\abc_list_selector_disabled_holo_dark.9.png => app\src\main\resources\appcompat\res\drawable-mdpi\abc_list_selector_disabled_holo_dark.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-mdpi\abc_list_selector_disabled_holo_light.9.png => app\src\main\resources\appcompat\res\drawable-mdpi\abc_list_selector_disabled_holo_light.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-mdpi\abc_menu_hardkey_panel_mtrl_mult.9.png => app\src\main\resources\appcompat\res\drawable-mdpi\abc_menu_hardkey_panel_mtrl_mult.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-mdpi\abc_popup_background_mtrl_mult.9.png => app\src\main\resources\appcompat\res\drawable-mdpi\abc_popup_background_mtrl_mult.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-mdpi\abc_scrubber_control_off_mtrl_alpha.png => app\src\main\resources\appcompat\res\drawable-mdpi\abc_scrubber_control_off_mtrl_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-mdpi\abc_scrubber_control_to_pressed_mtrl_000.png => app\src\main\resources\appcompat\res\drawable-mdpi\abc_scrubber_control_to_pressed_mtrl_000.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-mdpi\abc_scrubber_control_to_pressed_mtrl_005.png => app\src\main\resources\appcompat\res\drawable-mdpi\abc_scrubber_control_to_pressed_mtrl_005.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-mdpi\abc_scrubber_primary_mtrl_alpha.9.png => app\src\main\resources\appcompat\res\drawable-mdpi\abc_scrubber_primary_mtrl_alpha.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-mdpi\abc_scrubber_track_mtrl_alpha.9.png => app\src\main\resources\appcompat\res\drawable-mdpi\abc_scrubber_track_mtrl_alpha.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-mdpi\abc_spinner_mtrl_am_alpha.9.png => app\src\main\resources\appcompat\res\drawable-mdpi\abc_spinner_mtrl_am_alpha.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-mdpi\abc_switch_track_mtrl_alpha.9.png => app\src\main\resources\appcompat\res\drawable-mdpi\abc_switch_track_mtrl_alpha.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-mdpi\abc_tab_indicator_mtrl_alpha.9.png => app\src\main\resources\appcompat\res\drawable-mdpi\abc_tab_indicator_mtrl_alpha.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-mdpi\abc_textfield_activated_mtrl_alpha.9.png => app\src\main\resources\appcompat\res\drawable-mdpi\abc_textfield_activated_mtrl_alpha.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-mdpi\abc_textfield_default_mtrl_alpha.9.png => app\src\main\resources\appcompat\res\drawable-mdpi\abc_textfield_default_mtrl_alpha.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-mdpi\abc_textfield_search_activated_mtrl_alpha.9.png => app\src\main\resources\appcompat\res\drawable-mdpi\abc_textfield_search_activated_mtrl_alpha.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-mdpi\abc_textfield_search_default_mtrl_alpha.9.png => app\src\main\resources\appcompat\res\drawable-mdpi\abc_textfield_search_default_mtrl_alpha.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-v21\abc_action_bar_item_background_material.xml => app\src\main\resources\appcompat\res\drawable-v21\abc_action_bar_item_background_material.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-v21\abc_btn_colored_material.xml => app\src\main\resources\appcompat\res\drawable-v21\abc_btn_colored_material.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-v21\abc_edit_text_material.xml => app\src\main\resources\appcompat\res\drawable-v21\abc_edit_text_material.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-v23\abc_control_background_material.xml => app\src\main\resources\appcompat\res\drawable-v23\abc_control_background_material.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xhdpi\abc_ab_share_pack_mtrl_alpha.9.png => app\src\main\resources\appcompat\res\drawable-xhdpi\abc_ab_share_pack_mtrl_alpha.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xhdpi\abc_btn_check_to_on_mtrl_000.png => app\src\main\resources\appcompat\res\drawable-xhdpi\abc_btn_check_to_on_mtrl_000.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xhdpi\abc_btn_check_to_on_mtrl_015.png => app\src\main\resources\appcompat\res\drawable-xhdpi\abc_btn_check_to_on_mtrl_015.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xhdpi\abc_btn_radio_to_on_mtrl_000.png => app\src\main\resources\appcompat\res\drawable-xhdpi\abc_btn_radio_to_on_mtrl_000.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xhdpi\abc_btn_radio_to_on_mtrl_015.png => app\src\main\resources\appcompat\res\drawable-xhdpi\abc_btn_radio_to_on_mtrl_015.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xhdpi\abc_btn_rating_star_off_mtrl_alpha.png => app\src\main\resources\appcompat\res\drawable-xhdpi\abc_btn_rating_star_off_mtrl_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xhdpi\abc_btn_rating_star_on_mtrl_alpha.png => app\src\main\resources\appcompat\res\drawable-xhdpi\abc_btn_rating_star_on_mtrl_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xhdpi\abc_btn_switch_to_on_mtrl_00001.9.png => app\src\main\resources\appcompat\res\drawable-xhdpi\abc_btn_switch_to_on_mtrl_00001.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xhdpi\abc_btn_switch_to_on_mtrl_00012.9.png => app\src\main\resources\appcompat\res\drawable-xhdpi\abc_btn_switch_to_on_mtrl_00012.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xhdpi\abc_cab_background_top_mtrl_alpha.9.png => app\src\main\resources\appcompat\res\drawable-xhdpi\abc_cab_background_top_mtrl_alpha.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xhdpi\abc_ic_ab_back_mtrl_am_alpha.png => app\src\main\resources\appcompat\res\drawable-xhdpi\abc_ic_ab_back_mtrl_am_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xhdpi\abc_ic_clear_mtrl_alpha.png => app\src\main\resources\appcompat\res\drawable-xhdpi\abc_ic_clear_mtrl_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xhdpi\abc_ic_commit_search_api_mtrl_alpha.png => app\src\main\resources\appcompat\res\drawable-xhdpi\abc_ic_commit_search_api_mtrl_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xhdpi\abc_ic_go_search_api_mtrl_alpha.png => app\src\main\resources\appcompat\res\drawable-xhdpi\abc_ic_go_search_api_mtrl_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xhdpi\abc_ic_menu_copy_mtrl_am_alpha.png => app\src\main\resources\appcompat\res\drawable-xhdpi\abc_ic_menu_copy_mtrl_am_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xhdpi\abc_ic_menu_cut_mtrl_alpha.png => app\src\main\resources\appcompat\res\drawable-xhdpi\abc_ic_menu_cut_mtrl_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xhdpi\abc_ic_menu_moreoverflow_mtrl_alpha.png => app\src\main\resources\appcompat\res\drawable-xhdpi\abc_ic_menu_moreoverflow_mtrl_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xhdpi\abc_ic_menu_paste_mtrl_am_alpha.png => app\src\main\resources\appcompat\res\drawable-xhdpi\abc_ic_menu_paste_mtrl_am_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xhdpi\abc_ic_menu_selectall_mtrl_alpha.png => app\src\main\resources\appcompat\res\drawable-xhdpi\abc_ic_menu_selectall_mtrl_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xhdpi\abc_ic_menu_share_mtrl_alpha.png => app\src\main\resources\appcompat\res\drawable-xhdpi\abc_ic_menu_share_mtrl_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xhdpi\abc_ic_search_api_mtrl_alpha.png => app\src\main\resources\appcompat\res\drawable-xhdpi\abc_ic_search_api_mtrl_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xhdpi\abc_ic_star_black_16dp.png => app\src\main\resources\appcompat\res\drawable-xhdpi\abc_ic_star_black_16dp.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xhdpi\abc_ic_star_black_36dp.png => app\src\main\resources\appcompat\res\drawable-xhdpi\abc_ic_star_black_36dp.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xhdpi\abc_ic_star_half_black_16dp.png => app\src\main\resources\appcompat\res\drawable-xhdpi\abc_ic_star_half_black_16dp.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xhdpi\abc_ic_star_half_black_36dp.png => app\src\main\resources\appcompat\res\drawable-xhdpi\abc_ic_star_half_black_36dp.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xhdpi\abc_ic_voice_search_api_mtrl_alpha.png => app\src\main\resources\appcompat\res\drawable-xhdpi\abc_ic_voice_search_api_mtrl_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xhdpi\abc_list_divider_mtrl_alpha.9.png => app\src\main\resources\appcompat\res\drawable-xhdpi\abc_list_divider_mtrl_alpha.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xhdpi\abc_list_focused_holo.9.png => app\src\main\resources\appcompat\res\drawable-xhdpi\abc_list_focused_holo.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xhdpi\abc_list_longpressed_holo.9.png => app\src\main\resources\appcompat\res\drawable-xhdpi\abc_list_longpressed_holo.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xhdpi\abc_list_pressed_holo_dark.9.png => app\src\main\resources\appcompat\res\drawable-xhdpi\abc_list_pressed_holo_dark.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xhdpi\abc_list_pressed_holo_light.9.png => app\src\main\resources\appcompat\res\drawable-xhdpi\abc_list_pressed_holo_light.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xhdpi\abc_list_selector_disabled_holo_dark.9.png => app\src\main\resources\appcompat\res\drawable-xhdpi\abc_list_selector_disabled_holo_dark.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xhdpi\abc_list_selector_disabled_holo_light.9.png => app\src\main\resources\appcompat\res\drawable-xhdpi\abc_list_selector_disabled_holo_light.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xhdpi\abc_menu_hardkey_panel_mtrl_mult.9.png => app\src\main\resources\appcompat\res\drawable-xhdpi\abc_menu_hardkey_panel_mtrl_mult.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xhdpi\abc_popup_background_mtrl_mult.9.png => app\src\main\resources\appcompat\res\drawable-xhdpi\abc_popup_background_mtrl_mult.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xhdpi\abc_scrubber_control_off_mtrl_alpha.png => app\src\main\resources\appcompat\res\drawable-xhdpi\abc_scrubber_control_off_mtrl_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xhdpi\abc_scrubber_control_to_pressed_mtrl_000.png => app\src\main\resources\appcompat\res\drawable-xhdpi\abc_scrubber_control_to_pressed_mtrl_000.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xhdpi\abc_scrubber_control_to_pressed_mtrl_005.png => app\src\main\resources\appcompat\res\drawable-xhdpi\abc_scrubber_control_to_pressed_mtrl_005.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xhdpi\abc_scrubber_primary_mtrl_alpha.9.png => app\src\main\resources\appcompat\res\drawable-xhdpi\abc_scrubber_primary_mtrl_alpha.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xhdpi\abc_scrubber_track_mtrl_alpha.9.png => app\src\main\resources\appcompat\res\drawable-xhdpi\abc_scrubber_track_mtrl_alpha.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xhdpi\abc_spinner_mtrl_am_alpha.9.png => app\src\main\resources\appcompat\res\drawable-xhdpi\abc_spinner_mtrl_am_alpha.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xhdpi\abc_switch_track_mtrl_alpha.9.png => app\src\main\resources\appcompat\res\drawable-xhdpi\abc_switch_track_mtrl_alpha.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xhdpi\abc_tab_indicator_mtrl_alpha.9.png => app\src\main\resources\appcompat\res\drawable-xhdpi\abc_tab_indicator_mtrl_alpha.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xhdpi\abc_textfield_activated_mtrl_alpha.9.png => app\src\main\resources\appcompat\res\drawable-xhdpi\abc_textfield_activated_mtrl_alpha.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xhdpi\abc_textfield_default_mtrl_alpha.9.png => app\src\main\resources\appcompat\res\drawable-xhdpi\abc_textfield_default_mtrl_alpha.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xhdpi\abc_textfield_search_activated_mtrl_alpha.9.png => app\src\main\resources\appcompat\res\drawable-xhdpi\abc_textfield_search_activated_mtrl_alpha.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xhdpi\abc_textfield_search_default_mtrl_alpha.9.png => app\src\main\resources\appcompat\res\drawable-xhdpi\abc_textfield_search_default_mtrl_alpha.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxhdpi\abc_ab_share_pack_mtrl_alpha.9.png => app\src\main\resources\appcompat\res\drawable-xxhdpi\abc_ab_share_pack_mtrl_alpha.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxhdpi\abc_btn_check_to_on_mtrl_000.png => app\src\main\resources\appcompat\res\drawable-xxhdpi\abc_btn_check_to_on_mtrl_000.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxhdpi\abc_btn_check_to_on_mtrl_015.png => app\src\main\resources\appcompat\res\drawable-xxhdpi\abc_btn_check_to_on_mtrl_015.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxhdpi\abc_btn_radio_to_on_mtrl_000.png => app\src\main\resources\appcompat\res\drawable-xxhdpi\abc_btn_radio_to_on_mtrl_000.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxhdpi\abc_btn_radio_to_on_mtrl_015.png => app\src\main\resources\appcompat\res\drawable-xxhdpi\abc_btn_radio_to_on_mtrl_015.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxhdpi\abc_btn_rating_star_off_mtrl_alpha.png => app\src\main\resources\appcompat\res\drawable-xxhdpi\abc_btn_rating_star_off_mtrl_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxhdpi\abc_btn_rating_star_on_mtrl_alpha.png => app\src\main\resources\appcompat\res\drawable-xxhdpi\abc_btn_rating_star_on_mtrl_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxhdpi\abc_btn_switch_to_on_mtrl_00001.9.png => app\src\main\resources\appcompat\res\drawable-xxhdpi\abc_btn_switch_to_on_mtrl_00001.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxhdpi\abc_btn_switch_to_on_mtrl_00012.9.png => app\src\main\resources\appcompat\res\drawable-xxhdpi\abc_btn_switch_to_on_mtrl_00012.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxhdpi\abc_cab_background_top_mtrl_alpha.9.png => app\src\main\resources\appcompat\res\drawable-xxhdpi\abc_cab_background_top_mtrl_alpha.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxhdpi\abc_ic_ab_back_mtrl_am_alpha.png => app\src\main\resources\appcompat\res\drawable-xxhdpi\abc_ic_ab_back_mtrl_am_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxhdpi\abc_ic_clear_mtrl_alpha.png => app\src\main\resources\appcompat\res\drawable-xxhdpi\abc_ic_clear_mtrl_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxhdpi\abc_ic_commit_search_api_mtrl_alpha.png => app\src\main\resources\appcompat\res\drawable-xxhdpi\abc_ic_commit_search_api_mtrl_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxhdpi\abc_ic_go_search_api_mtrl_alpha.png => app\src\main\resources\appcompat\res\drawable-xxhdpi\abc_ic_go_search_api_mtrl_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxhdpi\abc_ic_menu_copy_mtrl_am_alpha.png => app\src\main\resources\appcompat\res\drawable-xxhdpi\abc_ic_menu_copy_mtrl_am_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxhdpi\abc_ic_menu_cut_mtrl_alpha.png => app\src\main\resources\appcompat\res\drawable-xxhdpi\abc_ic_menu_cut_mtrl_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxhdpi\abc_ic_menu_moreoverflow_mtrl_alpha.png => app\src\main\resources\appcompat\res\drawable-xxhdpi\abc_ic_menu_moreoverflow_mtrl_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxhdpi\abc_ic_menu_paste_mtrl_am_alpha.png => app\src\main\resources\appcompat\res\drawable-xxhdpi\abc_ic_menu_paste_mtrl_am_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxhdpi\abc_ic_menu_selectall_mtrl_alpha.png => app\src\main\resources\appcompat\res\drawable-xxhdpi\abc_ic_menu_selectall_mtrl_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxhdpi\abc_ic_menu_share_mtrl_alpha.png => app\src\main\resources\appcompat\res\drawable-xxhdpi\abc_ic_menu_share_mtrl_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxhdpi\abc_ic_search_api_mtrl_alpha.png => app\src\main\resources\appcompat\res\drawable-xxhdpi\abc_ic_search_api_mtrl_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxhdpi\abc_ic_star_black_16dp.png => app\src\main\resources\appcompat\res\drawable-xxhdpi\abc_ic_star_black_16dp.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxhdpi\abc_ic_star_black_36dp.png => app\src\main\resources\appcompat\res\drawable-xxhdpi\abc_ic_star_black_36dp.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxhdpi\abc_ic_star_half_black_16dp.png => app\src\main\resources\appcompat\res\drawable-xxhdpi\abc_ic_star_half_black_16dp.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxhdpi\abc_ic_star_half_black_36dp.png => app\src\main\resources\appcompat\res\drawable-xxhdpi\abc_ic_star_half_black_36dp.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxhdpi\abc_ic_voice_search_api_mtrl_alpha.png => app\src\main\resources\appcompat\res\drawable-xxhdpi\abc_ic_voice_search_api_mtrl_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxhdpi\abc_list_divider_mtrl_alpha.9.png => app\src\main\resources\appcompat\res\drawable-xxhdpi\abc_list_divider_mtrl_alpha.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxhdpi\abc_list_focused_holo.9.png => app\src\main\resources\appcompat\res\drawable-xxhdpi\abc_list_focused_holo.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxhdpi\abc_list_longpressed_holo.9.png => app\src\main\resources\appcompat\res\drawable-xxhdpi\abc_list_longpressed_holo.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxhdpi\abc_list_pressed_holo_dark.9.png => app\src\main\resources\appcompat\res\drawable-xxhdpi\abc_list_pressed_holo_dark.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxhdpi\abc_list_pressed_holo_light.9.png => app\src\main\resources\appcompat\res\drawable-xxhdpi\abc_list_pressed_holo_light.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxhdpi\abc_list_selector_disabled_holo_dark.9.png => app\src\main\resources\appcompat\res\drawable-xxhdpi\abc_list_selector_disabled_holo_dark.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxhdpi\abc_list_selector_disabled_holo_light.9.png => app\src\main\resources\appcompat\res\drawable-xxhdpi\abc_list_selector_disabled_holo_light.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxhdpi\abc_menu_hardkey_panel_mtrl_mult.9.png => app\src\main\resources\appcompat\res\drawable-xxhdpi\abc_menu_hardkey_panel_mtrl_mult.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxhdpi\abc_popup_background_mtrl_mult.9.png => app\src\main\resources\appcompat\res\drawable-xxhdpi\abc_popup_background_mtrl_mult.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxhdpi\abc_scrubber_control_off_mtrl_alpha.png => app\src\main\resources\appcompat\res\drawable-xxhdpi\abc_scrubber_control_off_mtrl_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxhdpi\abc_scrubber_control_to_pressed_mtrl_000.png => app\src\main\resources\appcompat\res\drawable-xxhdpi\abc_scrubber_control_to_pressed_mtrl_000.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxhdpi\abc_scrubber_control_to_pressed_mtrl_005.png => app\src\main\resources\appcompat\res\drawable-xxhdpi\abc_scrubber_control_to_pressed_mtrl_005.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxhdpi\abc_scrubber_primary_mtrl_alpha.9.png => app\src\main\resources\appcompat\res\drawable-xxhdpi\abc_scrubber_primary_mtrl_alpha.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxhdpi\abc_scrubber_track_mtrl_alpha.9.png => app\src\main\resources\appcompat\res\drawable-xxhdpi\abc_scrubber_track_mtrl_alpha.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxhdpi\abc_spinner_mtrl_am_alpha.9.png => app\src\main\resources\appcompat\res\drawable-xxhdpi\abc_spinner_mtrl_am_alpha.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxhdpi\abc_switch_track_mtrl_alpha.9.png => app\src\main\resources\appcompat\res\drawable-xxhdpi\abc_switch_track_mtrl_alpha.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxhdpi\abc_tab_indicator_mtrl_alpha.9.png => app\src\main\resources\appcompat\res\drawable-xxhdpi\abc_tab_indicator_mtrl_alpha.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxhdpi\abc_textfield_activated_mtrl_alpha.9.png => app\src\main\resources\appcompat\res\drawable-xxhdpi\abc_textfield_activated_mtrl_alpha.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxhdpi\abc_textfield_default_mtrl_alpha.9.png => app\src\main\resources\appcompat\res\drawable-xxhdpi\abc_textfield_default_mtrl_alpha.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxhdpi\abc_textfield_search_activated_mtrl_alpha.9.png => app\src\main\resources\appcompat\res\drawable-xxhdpi\abc_textfield_search_activated_mtrl_alpha.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxhdpi\abc_textfield_search_default_mtrl_alpha.9.png => app\src\main\resources\appcompat\res\drawable-xxhdpi\abc_textfield_search_default_mtrl_alpha.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxxhdpi\abc_btn_check_to_on_mtrl_000.png => app\src\main\resources\appcompat\res\drawable-xxxhdpi\abc_btn_check_to_on_mtrl_000.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxxhdpi\abc_btn_check_to_on_mtrl_015.png => app\src\main\resources\appcompat\res\drawable-xxxhdpi\abc_btn_check_to_on_mtrl_015.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxxhdpi\abc_btn_radio_to_on_mtrl_000.png => app\src\main\resources\appcompat\res\drawable-xxxhdpi\abc_btn_radio_to_on_mtrl_000.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxxhdpi\abc_btn_radio_to_on_mtrl_015.png => app\src\main\resources\appcompat\res\drawable-xxxhdpi\abc_btn_radio_to_on_mtrl_015.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxxhdpi\abc_btn_switch_to_on_mtrl_00001.9.png => app\src\main\resources\appcompat\res\drawable-xxxhdpi\abc_btn_switch_to_on_mtrl_00001.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxxhdpi\abc_btn_switch_to_on_mtrl_00012.9.png => app\src\main\resources\appcompat\res\drawable-xxxhdpi\abc_btn_switch_to_on_mtrl_00012.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxxhdpi\abc_ic_ab_back_mtrl_am_alpha.png => app\src\main\resources\appcompat\res\drawable-xxxhdpi\abc_ic_ab_back_mtrl_am_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxxhdpi\abc_ic_clear_mtrl_alpha.png => app\src\main\resources\appcompat\res\drawable-xxxhdpi\abc_ic_clear_mtrl_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxxhdpi\abc_ic_menu_copy_mtrl_am_alpha.png => app\src\main\resources\appcompat\res\drawable-xxxhdpi\abc_ic_menu_copy_mtrl_am_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxxhdpi\abc_ic_menu_cut_mtrl_alpha.png => app\src\main\resources\appcompat\res\drawable-xxxhdpi\abc_ic_menu_cut_mtrl_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxxhdpi\abc_ic_menu_moreoverflow_mtrl_alpha.png => app\src\main\resources\appcompat\res\drawable-xxxhdpi\abc_ic_menu_moreoverflow_mtrl_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxxhdpi\abc_ic_menu_paste_mtrl_am_alpha.png => app\src\main\resources\appcompat\res\drawable-xxxhdpi\abc_ic_menu_paste_mtrl_am_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxxhdpi\abc_ic_menu_selectall_mtrl_alpha.png => app\src\main\resources\appcompat\res\drawable-xxxhdpi\abc_ic_menu_selectall_mtrl_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxxhdpi\abc_ic_menu_share_mtrl_alpha.png => app\src\main\resources\appcompat\res\drawable-xxxhdpi\abc_ic_menu_share_mtrl_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxxhdpi\abc_ic_search_api_mtrl_alpha.png => app\src\main\resources\appcompat\res\drawable-xxxhdpi\abc_ic_search_api_mtrl_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxxhdpi\abc_ic_star_black_16dp.png => app\src\main\resources\appcompat\res\drawable-xxxhdpi\abc_ic_star_black_16dp.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxxhdpi\abc_ic_star_black_36dp.png => app\src\main\resources\appcompat\res\drawable-xxxhdpi\abc_ic_star_black_36dp.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxxhdpi\abc_ic_star_half_black_16dp.png => app\src\main\resources\appcompat\res\drawable-xxxhdpi\abc_ic_star_half_black_16dp.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxxhdpi\abc_ic_star_half_black_36dp.png => app\src\main\resources\appcompat\res\drawable-xxxhdpi\abc_ic_star_half_black_36dp.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxxhdpi\abc_ic_voice_search_api_mtrl_alpha.png => app\src\main\resources\appcompat\res\drawable-xxxhdpi\abc_ic_voice_search_api_mtrl_alpha.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxxhdpi\abc_scrubber_control_to_pressed_mtrl_000.png => app\src\main\resources\appcompat\res\drawable-xxxhdpi\abc_scrubber_control_to_pressed_mtrl_000.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxxhdpi\abc_scrubber_control_to_pressed_mtrl_005.png => app\src\main\resources\appcompat\res\drawable-xxxhdpi\abc_scrubber_control_to_pressed_mtrl_005.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxxhdpi\abc_spinner_mtrl_am_alpha.9.png => app\src\main\resources\appcompat\res\drawable-xxxhdpi\abc_spinner_mtrl_am_alpha.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxxhdpi\abc_switch_track_mtrl_alpha.9.png => app\src\main\resources\appcompat\res\drawable-xxxhdpi\abc_switch_track_mtrl_alpha.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable-xxxhdpi\abc_tab_indicator_mtrl_alpha.9.png => app\src\main\resources\appcompat\res\drawable-xxxhdpi\abc_tab_indicator_mtrl_alpha.9.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable\abc_btn_borderless_material.xml => app\src\main\resources\appcompat\res\drawable\abc_btn_borderless_material.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable\abc_btn_check_material.xml => app\src\main\resources\appcompat\res\drawable\abc_btn_check_material.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable\abc_btn_colored_material.xml => app\src\main\resources\appcompat\res\drawable\abc_btn_colored_material.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable\abc_btn_default_mtrl_shape.xml => app\src\main\resources\appcompat\res\drawable\abc_btn_default_mtrl_shape.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable\abc_btn_radio_material.xml => app\src\main\resources\appcompat\res\drawable\abc_btn_radio_material.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable\abc_cab_background_internal_bg.xml => app\src\main\resources\appcompat\res\drawable\abc_cab_background_internal_bg.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable\abc_cab_background_top_material.xml => app\src\main\resources\appcompat\res\drawable\abc_cab_background_top_material.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable\abc_dialog_material_background_dark.xml => app\src\main\resources\appcompat\res\drawable\abc_dialog_material_background_dark.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable\abc_dialog_material_background_light.xml => app\src\main\resources\appcompat\res\drawable\abc_dialog_material_background_light.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable\abc_edit_text_material.xml => app\src\main\resources\appcompat\res\drawable\abc_edit_text_material.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable\abc_item_background_holo_dark.xml => app\src\main\resources\appcompat\res\drawable\abc_item_background_holo_dark.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable\abc_item_background_holo_light.xml => app\src\main\resources\appcompat\res\drawable\abc_item_background_holo_light.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable\abc_list_selector_background_transition_holo_dark.xml => app\src\main\resources\appcompat\res\drawable\abc_list_selector_background_transition_holo_dark.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable\abc_list_selector_background_transition_holo_light.xml => app\src\main\resources\appcompat\res\drawable\abc_list_selector_background_transition_holo_light.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable\abc_list_selector_holo_dark.xml => app\src\main\resources\appcompat\res\drawable\abc_list_selector_holo_dark.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable\abc_list_selector_holo_light.xml => app\src\main\resources\appcompat\res\drawable\abc_list_selector_holo_light.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable\abc_ratingbar_full_material.xml => app\src\main\resources\appcompat\res\drawable\abc_ratingbar_full_material.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable\abc_ratingbar_indicator_material.xml => app\src\main\resources\appcompat\res\drawable\abc_ratingbar_indicator_material.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable\abc_ratingbar_small_material.xml => app\src\main\resources\appcompat\res\drawable\abc_ratingbar_small_material.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable\abc_seekbar_thumb_material.xml => app\src\main\resources\appcompat\res\drawable\abc_seekbar_thumb_material.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable\abc_seekbar_track_material.xml => app\src\main\resources\appcompat\res\drawable\abc_seekbar_track_material.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable\abc_spinner_textfield_background_material.xml => app\src\main\resources\appcompat\res\drawable\abc_spinner_textfield_background_material.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable\abc_switch_thumb_material.xml => app\src\main\resources\appcompat\res\drawable\abc_switch_thumb_material.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable\abc_tab_indicator_material.xml => app\src\main\resources\appcompat\res\drawable\abc_tab_indicator_material.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable\abc_text_cursor_material.xml => app\src\main\resources\appcompat\res\drawable\abc_text_cursor_material.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\drawable\abc_textfield_search_material.xml => app\src\main\resources\appcompat\res\drawable\abc_textfield_search_material.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\layout\abc_action_bar_title_item.xml => app\src\main\resources\appcompat\res\layout\abc_action_bar_title_item.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\layout\abc_action_bar_up_container.xml => app\src\main\resources\appcompat\res\layout\abc_action_bar_up_container.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\layout\abc_action_bar_view_list_nav_layout.xml => app\src\main\resources\appcompat\res\layout\abc_action_bar_view_list_nav_layout.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\layout\abc_action_menu_item_layout.xml => app\src\main\resources\appcompat\res\layout\abc_action_menu_item_layout.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\layout\abc_action_menu_layout.xml => app\src\main\resources\appcompat\res\layout\abc_action_menu_layout.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\layout\abc_action_mode_bar.xml => app\src\main\resources\appcompat\res\layout\abc_action_mode_bar.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\layout\abc_action_mode_close_item_material.xml => app\src\main\resources\appcompat\res\layout\abc_action_mode_close_item_material.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\layout\abc_activity_chooser_view.xml => app\src\main\resources\appcompat\res\layout\abc_activity_chooser_view.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\layout\abc_activity_chooser_view_list_item.xml => app\src\main\resources\appcompat\res\layout\abc_activity_chooser_view_list_item.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\layout\abc_alert_dialog_button_bar_material.xml => app\src\main\resources\appcompat\res\layout\abc_alert_dialog_button_bar_material.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\layout\abc_alert_dialog_material.xml => app\src\main\resources\appcompat\res\layout\abc_alert_dialog_material.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\layout\abc_dialog_title_material.xml => app\src\main\resources\appcompat\res\layout\abc_dialog_title_material.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\layout\abc_expanded_menu_layout.xml => app\src\main\resources\appcompat\res\layout\abc_expanded_menu_layout.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\layout\abc_list_menu_item_checkbox.xml => app\src\main\resources\appcompat\res\layout\abc_list_menu_item_checkbox.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\layout\abc_list_menu_item_icon.xml => app\src\main\resources\appcompat\res\layout\abc_list_menu_item_icon.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\layout\abc_list_menu_item_layout.xml => app\src\main\resources\appcompat\res\layout\abc_list_menu_item_layout.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\layout\abc_list_menu_item_radio.xml => app\src\main\resources\appcompat\res\layout\abc_list_menu_item_radio.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\layout\abc_popup_menu_item_layout.xml => app\src\main\resources\appcompat\res\layout\abc_popup_menu_item_layout.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\layout\abc_screen_content_include.xml => app\src\main\resources\appcompat\res\layout\abc_screen_content_include.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\layout\abc_screen_simple.xml => app\src\main\resources\appcompat\res\layout\abc_screen_simple.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\layout\abc_screen_simple_overlay_action_mode.xml => app\src\main\resources\appcompat\res\layout\abc_screen_simple_overlay_action_mode.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\layout\abc_screen_toolbar.xml => app\src\main\resources\appcompat\res\layout\abc_screen_toolbar.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\layout\abc_search_dropdown_item_icons_2line.xml => app\src\main\resources\appcompat\res\layout\abc_search_dropdown_item_icons_2line.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\layout\abc_search_view.xml => app\src\main\resources\appcompat\res\layout\abc_search_view.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\layout\abc_select_dialog_material.xml => app\src\main\resources\appcompat\res\layout\abc_select_dialog_material.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\layout\notification_media_action.xml => app\src\main\resources\appcompat\res\layout\notification_media_action.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\layout\notification_media_cancel_action.xml => app\src\main\resources\appcompat\res\layout\notification_media_cancel_action.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\layout\notification_template_big_media.xml => app\src\main\resources\appcompat\res\layout\notification_template_big_media.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\layout\notification_template_big_media_narrow.xml => app\src\main\resources\appcompat\res\layout\notification_template_big_media_narrow.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\layout\notification_template_lines.xml => app\src\main\resources\appcompat\res\layout\notification_template_lines.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\layout\notification_template_media.xml => app\src\main\resources\appcompat\res\layout\notification_template_media.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\layout\notification_template_part_chronometer.xml => app\src\main\resources\appcompat\res\layout\notification_template_part_chronometer.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\layout\notification_template_part_time.xml => app\src\main\resources\appcompat\res\layout\notification_template_part_time.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\layout\select_dialog_item_material.xml => app\src\main\resources\appcompat\res\layout\select_dialog_item_material.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\layout\select_dialog_multichoice_material.xml => app\src\main\resources\appcompat\res\layout\select_dialog_multichoice_material.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\layout\select_dialog_singlechoice_material.xml => app\src\main\resources\appcompat\res\layout\select_dialog_singlechoice_material.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\layout\support_simple_spinner_dropdown_item.xml => app\src\main\resources\appcompat\res\layout\support_simple_spinner_dropdown_item.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-af\strings.xml => app\src\main\resources\appcompat\res\values-af\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-am\strings.xml => app\src\main\resources\appcompat\res\values-am\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-ar\strings.xml => app\src\main\resources\appcompat\res\values-ar\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-az-rAZ\strings.xml => app\src\main\resources\appcompat\res\values-az-rAZ\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-bg\strings.xml => app\src\main\resources\appcompat\res\values-bg\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-bn-rBD\strings.xml => app\src\main\resources\appcompat\res\values-bn-rBD\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-ca\strings.xml => app\src\main\resources\appcompat\res\values-ca\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-cs\strings.xml => app\src\main\resources\appcompat\res\values-cs\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-da\strings.xml => app\src\main\resources\appcompat\res\values-da\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-de\strings.xml => app\src\main\resources\appcompat\res\values-de\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-el\strings.xml => app\src\main\resources\appcompat\res\values-el\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-en-rAU\strings.xml => app\src\main\resources\appcompat\res\values-en-rAU\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-en-rGB\strings.xml => app\src\main\resources\appcompat\res\values-en-rGB\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-en-rIN\strings.xml => app\src\main\resources\appcompat\res\values-en-rIN\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-es-rUS\strings.xml => app\src\main\resources\appcompat\res\values-es-rUS\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-es\strings.xml => app\src\main\resources\appcompat\res\values-es\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-et-rEE\strings.xml => app\src\main\resources\appcompat\res\values-et-rEE\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-eu-rES\strings.xml => app\src\main\resources\appcompat\res\values-eu-rES\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-fa\strings.xml => app\src\main\resources\appcompat\res\values-fa\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-fi\strings.xml => app\src\main\resources\appcompat\res\values-fi\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-fr-rCA\strings.xml => app\src\main\resources\appcompat\res\values-fr-rCA\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-fr\strings.xml => app\src\main\resources\appcompat\res\values-fr\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-gl-rES\strings.xml => app\src\main\resources\appcompat\res\values-gl-rES\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-gu-rIN\strings.xml => app\src\main\resources\appcompat\res\values-gu-rIN\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-h320dp\bools.xml => app\src\main\resources\appcompat\res\values-h320dp\bools.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-h720dp\dimens.xml => app\src\main\resources\appcompat\res\values-h720dp\dimens.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-hdpi\styles_base.xml => app\src\main\resources\appcompat\res\values-hdpi\styles_base.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-hi\strings.xml => app\src\main\resources\appcompat\res\values-hi\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-hr\strings.xml => app\src\main\resources\appcompat\res\values-hr\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-hu\strings.xml => app\src\main\resources\appcompat\res\values-hu\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-hy-rAM\strings.xml => app\src\main\resources\appcompat\res\values-hy-rAM\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-in\strings.xml => app\src\main\resources\appcompat\res\values-in\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-is-rIS\strings.xml => app\src\main\resources\appcompat\res\values-is-rIS\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-it\strings.xml => app\src\main\resources\appcompat\res\values-it\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-iw\strings.xml => app\src\main\resources\appcompat\res\values-iw\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-ja\strings.xml => app\src\main\resources\appcompat\res\values-ja\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-ka-rGE\strings.xml => app\src\main\resources\appcompat\res\values-ka-rGE\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-kk-rKZ\strings.xml => app\src\main\resources\appcompat\res\values-kk-rKZ\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-km-rKH\strings.xml => app\src\main\resources\appcompat\res\values-km-rKH\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-kn-rIN\strings.xml => app\src\main\resources\appcompat\res\values-kn-rIN\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-ko\strings.xml => app\src\main\resources\appcompat\res\values-ko\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-ky-rKG\strings.xml => app\src\main\resources\appcompat\res\values-ky-rKG\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-land\bools.xml => app\src\main\resources\appcompat\res\values-land\bools.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-land\config.xml => app\src\main\resources\appcompat\res\values-land\config.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-land\dimens.xml => app\src\main\resources\appcompat\res\values-land\dimens.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-land\dimens_material.xml => app\src\main\resources\appcompat\res\values-land\dimens_material.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-large\bools.xml => app\src\main\resources\appcompat\res\values-large\bools.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-large\config.xml => app\src\main\resources\appcompat\res\values-large\config.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-large\dimens.xml => app\src\main\resources\appcompat\res\values-large\dimens.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-large\themes_base.xml => app\src\main\resources\appcompat\res\values-large\themes_base.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-ldltr-v21\styles_base.xml => app\src\main\resources\appcompat\res\values-ldltr-v21\styles_base.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-lo-rLA\strings.xml => app\src\main\resources\appcompat\res\values-lo-rLA\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-lt\strings.xml => app\src\main\resources\appcompat\res\values-lt\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-lv\strings.xml => app\src\main\resources\appcompat\res\values-lv\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-mk-rMK\strings.xml => app\src\main\resources\appcompat\res\values-mk-rMK\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-ml-rIN\strings.xml => app\src\main\resources\appcompat\res\values-ml-rIN\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-mn-rMN\strings.xml => app\src\main\resources\appcompat\res\values-mn-rMN\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-mr-rIN\strings.xml => app\src\main\resources\appcompat\res\values-mr-rIN\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-ms-rMY\strings.xml => app\src\main\resources\appcompat\res\values-ms-rMY\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-my-rMM\strings.xml => app\src\main\resources\appcompat\res\values-my-rMM\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-nb\strings.xml => app\src\main\resources\appcompat\res\values-nb\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-ne-rNP\strings.xml => app\src\main\resources\appcompat\res\values-ne-rNP\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-night\themes_daynight.xml => app\src\main\resources\appcompat\res\values-night\themes_daynight.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-nl\strings.xml => app\src\main\resources\appcompat\res\values-nl\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-pa-rIN\strings.xml => app\src\main\resources\appcompat\res\values-pa-rIN\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-pl\strings.xml => app\src\main\resources\appcompat\res\values-pl\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-port\bools.xml => app\src\main\resources\appcompat\res\values-port\bools.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-pt-rBR\strings.xml => app\src\main\resources\appcompat\res\values-pt-rBR\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-pt-rPT\strings.xml => app\src\main\resources\appcompat\res\values-pt-rPT\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-pt\strings.xml => app\src\main\resources\appcompat\res\values-pt\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-ro\strings.xml => app\src\main\resources\appcompat\res\values-ro\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-ru\strings.xml => app\src\main\resources\appcompat\res\values-ru\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-si-rLK\strings.xml => app\src\main\resources\appcompat\res\values-si-rLK\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-sk\strings.xml => app\src\main\resources\appcompat\res\values-sk\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-sl\strings.xml => app\src\main\resources\appcompat\res\values-sl\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-sq-rAL\strings.xml => app\src\main\resources\appcompat\res\values-sq-rAL\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-sr\strings.xml => app\src\main\resources\appcompat\res\values-sr\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-sv\strings.xml => app\src\main\resources\appcompat\res\values-sv\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-sw600dp\config.xml => app\src\main\resources\appcompat\res\values-sw600dp\config.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-sw600dp\dimens.xml => app\src\main\resources\appcompat\res\values-sw600dp\dimens.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-sw\strings.xml => app\src\main\resources\appcompat\res\values-sw\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-ta-rIN\strings.xml => app\src\main\resources\appcompat\res\values-ta-rIN\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-te-rIN\strings.xml => app\src\main\resources\appcompat\res\values-te-rIN\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-th\strings.xml => app\src\main\resources\appcompat\res\values-th\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-tl\strings.xml => app\src\main\resources\appcompat\res\values-tl\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-tr\strings.xml => app\src\main\resources\appcompat\res\values-tr\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-uk\strings.xml => app\src\main\resources\appcompat\res\values-uk\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-ur-rPK\strings.xml => app\src\main\resources\appcompat\res\values-ur-rPK\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-uz-rUZ\strings.xml => app\src\main\resources\appcompat\res\values-uz-rUZ\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-v11\styles_base.xml => app\src\main\resources\appcompat\res\values-v11\styles_base.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-v11\styles_base_text.xml => app\src\main\resources\appcompat\res\values-v11\styles_base_text.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-v11\themes_base.xml => app\src\main\resources\appcompat\res\values-v11\themes_base.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-v12\styles_base.xml => app\src\main\resources\appcompat\res\values-v12\styles_base.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-v13\bools.xml => app\src\main\resources\appcompat\res\values-v13\bools.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-v14\styles.xml => app\src\main\resources\appcompat\res\values-v14\styles.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-v14\styles_base_text.xml => app\src\main\resources\appcompat\res\values-v14\styles_base_text.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-v14\themes_base.xml => app\src\main\resources\appcompat\res\values-v14\themes_base.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-v17\styles_rtl.xml => app\src\main\resources\appcompat\res\values-v17\styles_rtl.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-v18\dimens.xml => app\src\main\resources\appcompat\res\values-v18\dimens.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-v21\styles_base.xml => app\src\main\resources\appcompat\res\values-v21\styles_base.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-v21\styles_base_text.xml => app\src\main\resources\appcompat\res\values-v21\styles_base_text.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-v21\themes_base.xml => app\src\main\resources\appcompat\res\values-v21\themes_base.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-v22\themes_base.xml => app\src\main\resources\appcompat\res\values-v22\themes_base.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-v23\styles_base.xml => app\src\main\resources\appcompat\res\values-v23\styles_base.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-v23\styles_base_text.xml => app\src\main\resources\appcompat\res\values-v23\styles_base_text.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-v23\themes_base.xml => app\src\main\resources\appcompat\res\values-v23\themes_base.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-vi\strings.xml => app\src\main\resources\appcompat\res\values-vi\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-w360dp\dimens.xml => app\src\main\resources\appcompat\res\values-w360dp\dimens.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-w480dp\bools.xml => app\src\main\resources\appcompat\res\values-w480dp\bools.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-w480dp\config.xml => app\src\main\resources\appcompat\res\values-w480dp\config.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-w500dp\dimens.xml => app\src\main\resources\appcompat\res\values-w500dp\dimens.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-w600dp\dimens.xml => app\src\main\resources\appcompat\res\values-w600dp\dimens.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-w720dp\bools.xml => app\src\main\resources\appcompat\res\values-w720dp\bools.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-xlarge-land\dimens.xml => app\src\main\resources\appcompat\res\values-xlarge-land\dimens.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-xlarge\bools.xml => app\src\main\resources\appcompat\res\values-xlarge\bools.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-xlarge\dimens.xml => app\src\main\resources\appcompat\res\values-xlarge\dimens.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-zh-rCN\strings.xml => app\src\main\resources\appcompat\res\values-zh-rCN\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-zh-rHK\strings.xml => app\src\main\resources\appcompat\res\values-zh-rHK\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-zh-rTW\strings.xml => app\src\main\resources\appcompat\res\values-zh-rTW\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values-zu\strings.xml => app\src\main\resources\appcompat\res\values-zu\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values\attrs.xml => app\src\main\resources\appcompat\res\values\attrs.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values\bools.xml => app\src\main\resources\appcompat\res\values\bools.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values\colors.xml => app\src\main\resources\appcompat\res\values\colors.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values\colors_material.xml => app\src\main\resources\appcompat\res\values\colors_material.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values\config.xml => app\src\main\resources\appcompat\res\values\config.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values\dimens.xml => app\src\main\resources\appcompat\res\values\dimens.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values\dimens_material.xml => app\src\main\resources\appcompat\res\values\dimens_material.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values\ids.xml => app\src\main\resources\appcompat\res\values\ids.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values\strings.xml => app\src\main\resources\appcompat\res\values\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values\styles.xml => app\src\main\resources\appcompat\res\values\styles.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values\styles_base.xml => app\src\main\resources\appcompat\res\values\styles_base.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values\styles_base_text.xml => app\src\main\resources\appcompat\res\values\styles_base_text.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values\styles_rtl.xml => app\src\main\resources\appcompat\res\values\styles_rtl.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values\themes.xml => app\src\main\resources\appcompat\res\values\themes.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values\themes_base.xml => app\src\main\resources\appcompat\res\values\themes_base.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\res\values\themes_daynight.xml => app\src\main\resources\appcompat\res\values\themes_daynight.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\appcompat\src\.readme => app\src\main\resources\appcompat\src\.readme
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\cardview\AndroidManifest.xml => app\src\main\resources\cardview\AndroidManifest.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\cardview\res\values-v23\styles.xml => app\src\main\resources\cardview\res\values-v23\styles.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\cardview\res\values\attrs.xml => app\src\main\resources\cardview\res\values\attrs.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\cardview\res\values\colors.xml => app\src\main\resources\cardview\res\values\colors.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\cardview\res\values\dimens.xml => app\src\main\resources\cardview\res\values\dimens.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\cardview\res\values\styles.xml => app\src\main\resources\cardview\res\values\styles.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\cardview\src\.readme => app\src\main\resources\cardview\src\.readme
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\gridlayout\.classpath => app\src\main\resources\gridlayout\.classpath
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\gridlayout\.project => app\src\main\resources\gridlayout\.project
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\gridlayout\AndroidManifest.xml => app\src\main\resources\gridlayout\AndroidManifest.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\gridlayout\project.properties => app\src\main\resources\gridlayout\project.properties
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\gridlayout\README.txt => app\src\main\resources\gridlayout\README.txt
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\gridlayout\res\values\attrs.xml => app\src\main\resources\gridlayout\res\values\attrs.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\gridlayout\res\values\dimens.xml => app\src\main\resources\gridlayout\res\values\dimens.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\gridlayout\src\.readme => app\src\main\resources\gridlayout\src\.readme
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\.classpath => app\src\main\resources\mediarouter\.classpath
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\.project => app\src\main\resources\mediarouter\.project
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\AndroidManifest.xml => app\src\main\resources\mediarouter\AndroidManifest.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\project.properties => app\src\main\resources\mediarouter\project.properties
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\README.txt => app\src\main\resources\mediarouter\README.txt
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-hdpi\ic_audiotrack.png => app\src\main\resources\mediarouter\res\drawable-hdpi\ic_audiotrack.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-hdpi\ic_audiotrack_light.png => app\src\main\resources\mediarouter\res\drawable-hdpi\ic_audiotrack_light.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-hdpi\ic_bluetooth_grey.png => app\src\main\resources\mediarouter\res\drawable-hdpi\ic_bluetooth_grey.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-hdpi\ic_bluetooth_white.png => app\src\main\resources\mediarouter\res\drawable-hdpi\ic_bluetooth_white.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-hdpi\ic_cast_dark.png => app\src\main\resources\mediarouter\res\drawable-hdpi\ic_cast_dark.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-hdpi\ic_cast_disabled_light.png => app\src\main\resources\mediarouter\res\drawable-hdpi\ic_cast_disabled_light.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-hdpi\ic_cast_grey.png => app\src\main\resources\mediarouter\res\drawable-hdpi\ic_cast_grey.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-hdpi\ic_cast_light.png => app\src\main\resources\mediarouter\res\drawable-hdpi\ic_cast_light.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-hdpi\ic_cast_off_light.png => app\src\main\resources\mediarouter\res\drawable-hdpi\ic_cast_off_light.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-hdpi\ic_cast_on_0_light.png => app\src\main\resources\mediarouter\res\drawable-hdpi\ic_cast_on_0_light.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-hdpi\ic_cast_on_1_light.png => app\src\main\resources\mediarouter\res\drawable-hdpi\ic_cast_on_1_light.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-hdpi\ic_cast_on_2_light.png => app\src\main\resources\mediarouter\res\drawable-hdpi\ic_cast_on_2_light.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-hdpi\ic_cast_on_light.png => app\src\main\resources\mediarouter\res\drawable-hdpi\ic_cast_on_light.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-hdpi\ic_cast_white.png => app\src\main\resources\mediarouter\res\drawable-hdpi\ic_cast_white.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-hdpi\ic_close_dark.png => app\src\main\resources\mediarouter\res\drawable-hdpi\ic_close_dark.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-hdpi\ic_close_light.png => app\src\main\resources\mediarouter\res\drawable-hdpi\ic_close_light.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-hdpi\ic_media_pause.png => app\src\main\resources\mediarouter\res\drawable-hdpi\ic_media_pause.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-hdpi\ic_media_play.png => app\src\main\resources\mediarouter\res\drawable-hdpi\ic_media_play.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-hdpi\ic_media_route_disabled_mono_dark.png => app\src\main\resources\mediarouter\res\drawable-hdpi\ic_media_route_disabled_mono_dark.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-hdpi\ic_media_route_off_mono_dark.png => app\src\main\resources\mediarouter\res\drawable-hdpi\ic_media_route_off_mono_dark.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-hdpi\ic_media_route_on_0_mono_dark.png => app\src\main\resources\mediarouter\res\drawable-hdpi\ic_media_route_on_0_mono_dark.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-hdpi\ic_media_route_on_1_mono_dark.png => app\src\main\resources\mediarouter\res\drawable-hdpi\ic_media_route_on_1_mono_dark.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-hdpi\ic_media_route_on_2_mono_dark.png => app\src\main\resources\mediarouter\res\drawable-hdpi\ic_media_route_on_2_mono_dark.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-hdpi\ic_media_route_on_mono_dark.png => app\src\main\resources\mediarouter\res\drawable-hdpi\ic_media_route_on_mono_dark.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-hdpi\ic_pause_dark.png => app\src\main\resources\mediarouter\res\drawable-hdpi\ic_pause_dark.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-hdpi\ic_pause_light.png => app\src\main\resources\mediarouter\res\drawable-hdpi\ic_pause_light.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-hdpi\ic_play_dark.png => app\src\main\resources\mediarouter\res\drawable-hdpi\ic_play_dark.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-hdpi\ic_play_light.png => app\src\main\resources\mediarouter\res\drawable-hdpi\ic_play_light.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-hdpi\ic_speaker_dark.png => app\src\main\resources\mediarouter\res\drawable-hdpi\ic_speaker_dark.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-hdpi\ic_speaker_group_dark.png => app\src\main\resources\mediarouter\res\drawable-hdpi\ic_speaker_group_dark.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-hdpi\ic_speaker_group_light.png => app\src\main\resources\mediarouter\res\drawable-hdpi\ic_speaker_group_light.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-hdpi\ic_speaker_light.png => app\src\main\resources\mediarouter\res\drawable-hdpi\ic_speaker_light.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-hdpi\ic_tv_dark.png => app\src\main\resources\mediarouter\res\drawable-hdpi\ic_tv_dark.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-hdpi\ic_tv_light.png => app\src\main\resources\mediarouter\res\drawable-hdpi\ic_tv_light.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-mdpi\ic_audiotrack.png => app\src\main\resources\mediarouter\res\drawable-mdpi\ic_audiotrack.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-mdpi\ic_audiotrack_light.png => app\src\main\resources\mediarouter\res\drawable-mdpi\ic_audiotrack_light.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-mdpi\ic_bluetooth_grey.png => app\src\main\resources\mediarouter\res\drawable-mdpi\ic_bluetooth_grey.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-mdpi\ic_bluetooth_white.png => app\src\main\resources\mediarouter\res\drawable-mdpi\ic_bluetooth_white.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-mdpi\ic_cast_dark.png => app\src\main\resources\mediarouter\res\drawable-mdpi\ic_cast_dark.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-mdpi\ic_cast_disabled_light.png => app\src\main\resources\mediarouter\res\drawable-mdpi\ic_cast_disabled_light.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-mdpi\ic_cast_grey.png => app\src\main\resources\mediarouter\res\drawable-mdpi\ic_cast_grey.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-mdpi\ic_cast_light.png => app\src\main\resources\mediarouter\res\drawable-mdpi\ic_cast_light.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-mdpi\ic_cast_off_light.png => app\src\main\resources\mediarouter\res\drawable-mdpi\ic_cast_off_light.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-mdpi\ic_cast_on_0_light.png => app\src\main\resources\mediarouter\res\drawable-mdpi\ic_cast_on_0_light.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-mdpi\ic_cast_on_1_light.png => app\src\main\resources\mediarouter\res\drawable-mdpi\ic_cast_on_1_light.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-mdpi\ic_cast_on_2_light.png => app\src\main\resources\mediarouter\res\drawable-mdpi\ic_cast_on_2_light.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-mdpi\ic_cast_on_light.png => app\src\main\resources\mediarouter\res\drawable-mdpi\ic_cast_on_light.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-mdpi\ic_cast_white.png => app\src\main\resources\mediarouter\res\drawable-mdpi\ic_cast_white.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-mdpi\ic_close_dark.png => app\src\main\resources\mediarouter\res\drawable-mdpi\ic_close_dark.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-mdpi\ic_close_light.png => app\src\main\resources\mediarouter\res\drawable-mdpi\ic_close_light.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-mdpi\ic_media_pause.png => app\src\main\resources\mediarouter\res\drawable-mdpi\ic_media_pause.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-mdpi\ic_media_play.png => app\src\main\resources\mediarouter\res\drawable-mdpi\ic_media_play.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-mdpi\ic_media_route_disabled_mono_dark.png => app\src\main\resources\mediarouter\res\drawable-mdpi\ic_media_route_disabled_mono_dark.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-mdpi\ic_media_route_off_mono_dark.png => app\src\main\resources\mediarouter\res\drawable-mdpi\ic_media_route_off_mono_dark.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-mdpi\ic_media_route_on_0_mono_dark.png => app\src\main\resources\mediarouter\res\drawable-mdpi\ic_media_route_on_0_mono_dark.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-mdpi\ic_media_route_on_1_mono_dark.png => app\src\main\resources\mediarouter\res\drawable-mdpi\ic_media_route_on_1_mono_dark.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-mdpi\ic_media_route_on_2_mono_dark.png => app\src\main\resources\mediarouter\res\drawable-mdpi\ic_media_route_on_2_mono_dark.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-mdpi\ic_media_route_on_mono_dark.png => app\src\main\resources\mediarouter\res\drawable-mdpi\ic_media_route_on_mono_dark.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-mdpi\ic_pause_dark.png => app\src\main\resources\mediarouter\res\drawable-mdpi\ic_pause_dark.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-mdpi\ic_pause_light.png => app\src\main\resources\mediarouter\res\drawable-mdpi\ic_pause_light.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-mdpi\ic_play_dark.png => app\src\main\resources\mediarouter\res\drawable-mdpi\ic_play_dark.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-mdpi\ic_play_light.png => app\src\main\resources\mediarouter\res\drawable-mdpi\ic_play_light.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-mdpi\ic_speaker_dark.png => app\src\main\resources\mediarouter\res\drawable-mdpi\ic_speaker_dark.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-mdpi\ic_speaker_group_dark.png => app\src\main\resources\mediarouter\res\drawable-mdpi\ic_speaker_group_dark.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-mdpi\ic_speaker_group_light.png => app\src\main\resources\mediarouter\res\drawable-mdpi\ic_speaker_group_light.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-mdpi\ic_speaker_light.png => app\src\main\resources\mediarouter\res\drawable-mdpi\ic_speaker_light.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-mdpi\ic_tv_dark.png => app\src\main\resources\mediarouter\res\drawable-mdpi\ic_tv_dark.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-mdpi\ic_tv_light.png => app\src\main\resources\mediarouter\res\drawable-mdpi\ic_tv_light.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xhdpi\ic_audiotrack.png => app\src\main\resources\mediarouter\res\drawable-xhdpi\ic_audiotrack.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xhdpi\ic_audiotrack_light.png => app\src\main\resources\mediarouter\res\drawable-xhdpi\ic_audiotrack_light.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xhdpi\ic_bluetooth_grey.png => app\src\main\resources\mediarouter\res\drawable-xhdpi\ic_bluetooth_grey.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xhdpi\ic_bluetooth_white.png => app\src\main\resources\mediarouter\res\drawable-xhdpi\ic_bluetooth_white.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xhdpi\ic_cast_dark.png => app\src\main\resources\mediarouter\res\drawable-xhdpi\ic_cast_dark.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xhdpi\ic_cast_disabled_light.png => app\src\main\resources\mediarouter\res\drawable-xhdpi\ic_cast_disabled_light.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xhdpi\ic_cast_grey.png => app\src\main\resources\mediarouter\res\drawable-xhdpi\ic_cast_grey.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xhdpi\ic_cast_light.png => app\src\main\resources\mediarouter\res\drawable-xhdpi\ic_cast_light.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xhdpi\ic_cast_off_light.png => app\src\main\resources\mediarouter\res\drawable-xhdpi\ic_cast_off_light.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xhdpi\ic_cast_on_0_light.png => app\src\main\resources\mediarouter\res\drawable-xhdpi\ic_cast_on_0_light.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xhdpi\ic_cast_on_1_light.png => app\src\main\resources\mediarouter\res\drawable-xhdpi\ic_cast_on_1_light.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xhdpi\ic_cast_on_2_light.png => app\src\main\resources\mediarouter\res\drawable-xhdpi\ic_cast_on_2_light.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xhdpi\ic_cast_on_light.png => app\src\main\resources\mediarouter\res\drawable-xhdpi\ic_cast_on_light.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xhdpi\ic_cast_white.png => app\src\main\resources\mediarouter\res\drawable-xhdpi\ic_cast_white.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xhdpi\ic_close_dark.png => app\src\main\resources\mediarouter\res\drawable-xhdpi\ic_close_dark.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xhdpi\ic_close_light.png => app\src\main\resources\mediarouter\res\drawable-xhdpi\ic_close_light.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xhdpi\ic_media_pause.png => app\src\main\resources\mediarouter\res\drawable-xhdpi\ic_media_pause.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xhdpi\ic_media_play.png => app\src\main\resources\mediarouter\res\drawable-xhdpi\ic_media_play.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xhdpi\ic_media_route_disabled_mono_dark.png => app\src\main\resources\mediarouter\res\drawable-xhdpi\ic_media_route_disabled_mono_dark.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xhdpi\ic_media_route_off_mono_dark.png => app\src\main\resources\mediarouter\res\drawable-xhdpi\ic_media_route_off_mono_dark.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xhdpi\ic_media_route_on_0_mono_dark.png => app\src\main\resources\mediarouter\res\drawable-xhdpi\ic_media_route_on_0_mono_dark.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xhdpi\ic_media_route_on_1_mono_dark.png => app\src\main\resources\mediarouter\res\drawable-xhdpi\ic_media_route_on_1_mono_dark.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xhdpi\ic_media_route_on_2_mono_dark.png => app\src\main\resources\mediarouter\res\drawable-xhdpi\ic_media_route_on_2_mono_dark.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xhdpi\ic_media_route_on_mono_dark.png => app\src\main\resources\mediarouter\res\drawable-xhdpi\ic_media_route_on_mono_dark.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xhdpi\ic_pause_dark.png => app\src\main\resources\mediarouter\res\drawable-xhdpi\ic_pause_dark.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xhdpi\ic_pause_light.png => app\src\main\resources\mediarouter\res\drawable-xhdpi\ic_pause_light.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xhdpi\ic_play_dark.png => app\src\main\resources\mediarouter\res\drawable-xhdpi\ic_play_dark.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xhdpi\ic_play_light.png => app\src\main\resources\mediarouter\res\drawable-xhdpi\ic_play_light.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xhdpi\ic_speaker_dark.png => app\src\main\resources\mediarouter\res\drawable-xhdpi\ic_speaker_dark.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xhdpi\ic_speaker_group_dark.png => app\src\main\resources\mediarouter\res\drawable-xhdpi\ic_speaker_group_dark.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xhdpi\ic_speaker_group_light.png => app\src\main\resources\mediarouter\res\drawable-xhdpi\ic_speaker_group_light.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xhdpi\ic_speaker_light.png => app\src\main\resources\mediarouter\res\drawable-xhdpi\ic_speaker_light.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xhdpi\ic_tv_dark.png => app\src\main\resources\mediarouter\res\drawable-xhdpi\ic_tv_dark.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xhdpi\ic_tv_light.png => app\src\main\resources\mediarouter\res\drawable-xhdpi\ic_tv_light.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxhdpi\ic_audiotrack.png => app\src\main\resources\mediarouter\res\drawable-xxhdpi\ic_audiotrack.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxhdpi\ic_audiotrack_light.png => app\src\main\resources\mediarouter\res\drawable-xxhdpi\ic_audiotrack_light.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxhdpi\ic_bluetooth_grey.png => app\src\main\resources\mediarouter\res\drawable-xxhdpi\ic_bluetooth_grey.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxhdpi\ic_bluetooth_white.png => app\src\main\resources\mediarouter\res\drawable-xxhdpi\ic_bluetooth_white.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxhdpi\ic_cast_dark.png => app\src\main\resources\mediarouter\res\drawable-xxhdpi\ic_cast_dark.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxhdpi\ic_cast_disabled_light.png => app\src\main\resources\mediarouter\res\drawable-xxhdpi\ic_cast_disabled_light.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxhdpi\ic_cast_grey.png => app\src\main\resources\mediarouter\res\drawable-xxhdpi\ic_cast_grey.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxhdpi\ic_cast_light.png => app\src\main\resources\mediarouter\res\drawable-xxhdpi\ic_cast_light.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxhdpi\ic_cast_off_light.png => app\src\main\resources\mediarouter\res\drawable-xxhdpi\ic_cast_off_light.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxhdpi\ic_cast_on_0_light.png => app\src\main\resources\mediarouter\res\drawable-xxhdpi\ic_cast_on_0_light.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxhdpi\ic_cast_on_1_light.png => app\src\main\resources\mediarouter\res\drawable-xxhdpi\ic_cast_on_1_light.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxhdpi\ic_cast_on_2_light.png => app\src\main\resources\mediarouter\res\drawable-xxhdpi\ic_cast_on_2_light.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxhdpi\ic_cast_on_light.png => app\src\main\resources\mediarouter\res\drawable-xxhdpi\ic_cast_on_light.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxhdpi\ic_cast_white.png => app\src\main\resources\mediarouter\res\drawable-xxhdpi\ic_cast_white.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxhdpi\ic_close_dark.png => app\src\main\resources\mediarouter\res\drawable-xxhdpi\ic_close_dark.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxhdpi\ic_close_light.png => app\src\main\resources\mediarouter\res\drawable-xxhdpi\ic_close_light.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxhdpi\ic_media_pause.png => app\src\main\resources\mediarouter\res\drawable-xxhdpi\ic_media_pause.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxhdpi\ic_media_play.png => app\src\main\resources\mediarouter\res\drawable-xxhdpi\ic_media_play.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxhdpi\ic_media_route_disabled_mono_dark.png => app\src\main\resources\mediarouter\res\drawable-xxhdpi\ic_media_route_disabled_mono_dark.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxhdpi\ic_media_route_off_mono_dark.png => app\src\main\resources\mediarouter\res\drawable-xxhdpi\ic_media_route_off_mono_dark.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxhdpi\ic_media_route_on_0_mono_dark.png => app\src\main\resources\mediarouter\res\drawable-xxhdpi\ic_media_route_on_0_mono_dark.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxhdpi\ic_media_route_on_1_mono_dark.png => app\src\main\resources\mediarouter\res\drawable-xxhdpi\ic_media_route_on_1_mono_dark.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxhdpi\ic_media_route_on_2_mono_dark.png => app\src\main\resources\mediarouter\res\drawable-xxhdpi\ic_media_route_on_2_mono_dark.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxhdpi\ic_media_route_on_mono_dark.png => app\src\main\resources\mediarouter\res\drawable-xxhdpi\ic_media_route_on_mono_dark.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxhdpi\ic_pause_dark.png => app\src\main\resources\mediarouter\res\drawable-xxhdpi\ic_pause_dark.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxhdpi\ic_pause_light.png => app\src\main\resources\mediarouter\res\drawable-xxhdpi\ic_pause_light.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxhdpi\ic_play_dark.png => app\src\main\resources\mediarouter\res\drawable-xxhdpi\ic_play_dark.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxhdpi\ic_play_light.png => app\src\main\resources\mediarouter\res\drawable-xxhdpi\ic_play_light.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxhdpi\ic_speaker_dark.png => app\src\main\resources\mediarouter\res\drawable-xxhdpi\ic_speaker_dark.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxhdpi\ic_speaker_group_dark.png => app\src\main\resources\mediarouter\res\drawable-xxhdpi\ic_speaker_group_dark.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxhdpi\ic_speaker_group_light.png => app\src\main\resources\mediarouter\res\drawable-xxhdpi\ic_speaker_group_light.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxhdpi\ic_speaker_light.png => app\src\main\resources\mediarouter\res\drawable-xxhdpi\ic_speaker_light.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxhdpi\ic_tv_dark.png => app\src\main\resources\mediarouter\res\drawable-xxhdpi\ic_tv_dark.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxhdpi\ic_tv_light.png => app\src\main\resources\mediarouter\res\drawable-xxhdpi\ic_tv_light.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxxhdpi\ic_cast_grey.png => app\src\main\resources\mediarouter\res\drawable-xxxhdpi\ic_cast_grey.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxxhdpi\ic_cast_white.png => app\src\main\resources\mediarouter\res\drawable-xxxhdpi\ic_cast_white.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxxhdpi\ic_close_light.png => app\src\main\resources\mediarouter\res\drawable-xxxhdpi\ic_close_light.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxxhdpi\ic_collapse_00000.png => app\src\main\resources\mediarouter\res\drawable-xxxhdpi\ic_collapse_00000.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxxhdpi\ic_collapse_00001.png => app\src\main\resources\mediarouter\res\drawable-xxxhdpi\ic_collapse_00001.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxxhdpi\ic_collapse_00002.png => app\src\main\resources\mediarouter\res\drawable-xxxhdpi\ic_collapse_00002.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxxhdpi\ic_collapse_00003.png => app\src\main\resources\mediarouter\res\drawable-xxxhdpi\ic_collapse_00003.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxxhdpi\ic_collapse_00004.png => app\src\main\resources\mediarouter\res\drawable-xxxhdpi\ic_collapse_00004.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxxhdpi\ic_collapse_00005.png => app\src\main\resources\mediarouter\res\drawable-xxxhdpi\ic_collapse_00005.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxxhdpi\ic_collapse_00006.png => app\src\main\resources\mediarouter\res\drawable-xxxhdpi\ic_collapse_00006.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxxhdpi\ic_collapse_00007.png => app\src\main\resources\mediarouter\res\drawable-xxxhdpi\ic_collapse_00007.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxxhdpi\ic_collapse_00008.png => app\src\main\resources\mediarouter\res\drawable-xxxhdpi\ic_collapse_00008.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxxhdpi\ic_collapse_00009.png => app\src\main\resources\mediarouter\res\drawable-xxxhdpi\ic_collapse_00009.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxxhdpi\ic_collapse_00010.png => app\src\main\resources\mediarouter\res\drawable-xxxhdpi\ic_collapse_00010.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxxhdpi\ic_collapse_00011.png => app\src\main\resources\mediarouter\res\drawable-xxxhdpi\ic_collapse_00011.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxxhdpi\ic_collapse_00012.png => app\src\main\resources\mediarouter\res\drawable-xxxhdpi\ic_collapse_00012.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxxhdpi\ic_collapse_00013.png => app\src\main\resources\mediarouter\res\drawable-xxxhdpi\ic_collapse_00013.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxxhdpi\ic_collapse_00014.png => app\src\main\resources\mediarouter\res\drawable-xxxhdpi\ic_collapse_00014.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxxhdpi\ic_collapse_00015.png => app\src\main\resources\mediarouter\res\drawable-xxxhdpi\ic_collapse_00015.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxxhdpi\ic_expand_00000.png => app\src\main\resources\mediarouter\res\drawable-xxxhdpi\ic_expand_00000.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxxhdpi\ic_expand_00001.png => app\src\main\resources\mediarouter\res\drawable-xxxhdpi\ic_expand_00001.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxxhdpi\ic_expand_00002.png => app\src\main\resources\mediarouter\res\drawable-xxxhdpi\ic_expand_00002.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxxhdpi\ic_expand_00003.png => app\src\main\resources\mediarouter\res\drawable-xxxhdpi\ic_expand_00003.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxxhdpi\ic_expand_00004.png => app\src\main\resources\mediarouter\res\drawable-xxxhdpi\ic_expand_00004.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxxhdpi\ic_expand_00005.png => app\src\main\resources\mediarouter\res\drawable-xxxhdpi\ic_expand_00005.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxxhdpi\ic_expand_00006.png => app\src\main\resources\mediarouter\res\drawable-xxxhdpi\ic_expand_00006.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxxhdpi\ic_expand_00007.png => app\src\main\resources\mediarouter\res\drawable-xxxhdpi\ic_expand_00007.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxxhdpi\ic_expand_00008.png => app\src\main\resources\mediarouter\res\drawable-xxxhdpi\ic_expand_00008.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxxhdpi\ic_expand_00009.png => app\src\main\resources\mediarouter\res\drawable-xxxhdpi\ic_expand_00009.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxxhdpi\ic_expand_00010.png => app\src\main\resources\mediarouter\res\drawable-xxxhdpi\ic_expand_00010.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxxhdpi\ic_expand_00011.png => app\src\main\resources\mediarouter\res\drawable-xxxhdpi\ic_expand_00011.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxxhdpi\ic_expand_00012.png => app\src\main\resources\mediarouter\res\drawable-xxxhdpi\ic_expand_00012.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxxhdpi\ic_expand_00013.png => app\src\main\resources\mediarouter\res\drawable-xxxhdpi\ic_expand_00013.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxxhdpi\ic_expand_00014.png => app\src\main\resources\mediarouter\res\drawable-xxxhdpi\ic_expand_00014.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxxhdpi\ic_expand_00015.png => app\src\main\resources\mediarouter\res\drawable-xxxhdpi\ic_expand_00015.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxxhdpi\ic_pause_light.png => app\src\main\resources\mediarouter\res\drawable-xxxhdpi\ic_pause_light.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable-xxxhdpi\ic_play_light.png => app\src\main\resources\mediarouter\res\drawable-xxxhdpi\ic_play_light.png
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable\ic_collapse.xml => app\src\main\resources\mediarouter\res\drawable\ic_collapse.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable\ic_expand.xml => app\src\main\resources\mediarouter\res\drawable\ic_expand.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable\mr_dialog_material_background_dark.xml => app\src\main\resources\mediarouter\res\drawable\mr_dialog_material_background_dark.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable\mr_dialog_material_background_light.xml => app\src\main\resources\mediarouter\res\drawable\mr_dialog_material_background_light.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable\mr_ic_audiotrack_light.xml => app\src\main\resources\mediarouter\res\drawable\mr_ic_audiotrack_light.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable\mr_ic_cast_dark.xml => app\src\main\resources\mediarouter\res\drawable\mr_ic_cast_dark.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable\mr_ic_cast_light.xml => app\src\main\resources\mediarouter\res\drawable\mr_ic_cast_light.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable\mr_ic_close_dark.xml => app\src\main\resources\mediarouter\res\drawable\mr_ic_close_dark.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable\mr_ic_close_light.xml => app\src\main\resources\mediarouter\res\drawable\mr_ic_close_light.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable\mr_ic_media_route_connecting_mono_dark.xml => app\src\main\resources\mediarouter\res\drawable\mr_ic_media_route_connecting_mono_dark.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable\mr_ic_media_route_connecting_mono_light.xml => app\src\main\resources\mediarouter\res\drawable\mr_ic_media_route_connecting_mono_light.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable\mr_ic_media_route_mono_dark.xml => app\src\main\resources\mediarouter\res\drawable\mr_ic_media_route_mono_dark.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable\mr_ic_media_route_mono_light.xml => app\src\main\resources\mediarouter\res\drawable\mr_ic_media_route_mono_light.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable\mr_ic_pause_dark.xml => app\src\main\resources\mediarouter\res\drawable\mr_ic_pause_dark.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable\mr_ic_pause_light.xml => app\src\main\resources\mediarouter\res\drawable\mr_ic_pause_light.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable\mr_ic_play_dark.xml => app\src\main\resources\mediarouter\res\drawable\mr_ic_play_dark.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\drawable\mr_ic_play_light.xml => app\src\main\resources\mediarouter\res\drawable\mr_ic_play_light.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\interpolator\mr_fast_out_slow_in.xml => app\src\main\resources\mediarouter\res\interpolator\mr_fast_out_slow_in.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\interpolator\mr_linear_out_slow_in.xml => app\src\main\resources\mediarouter\res\interpolator\mr_linear_out_slow_in.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\layout\mr_chooser_dialog.xml => app\src\main\resources\mediarouter\res\layout\mr_chooser_dialog.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\layout\mr_chooser_list_item.xml => app\src\main\resources\mediarouter\res\layout\mr_chooser_list_item.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\layout\mr_controller_material_dialog_b.xml => app\src\main\resources\mediarouter\res\layout\mr_controller_material_dialog_b.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\layout\mr_controller_volume_item.xml => app\src\main\resources\mediarouter\res\layout\mr_controller_volume_item.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\layout\mr_playback_control.xml => app\src\main\resources\mediarouter\res\layout\mr_playback_control.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\layout\mr_volume_control.xml => app\src\main\resources\mediarouter\res\layout\mr_volume_control.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-af\strings.xml => app\src\main\resources\mediarouter\res\values-af\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-am\strings.xml => app\src\main\resources\mediarouter\res\values-am\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-ar\strings.xml => app\src\main\resources\mediarouter\res\values-ar\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-az-rAZ\strings.xml => app\src\main\resources\mediarouter\res\values-az-rAZ\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-bg\strings.xml => app\src\main\resources\mediarouter\res\values-bg\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-bn-rBD\strings.xml => app\src\main\resources\mediarouter\res\values-bn-rBD\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-ca\strings.xml => app\src\main\resources\mediarouter\res\values-ca\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-cs\strings.xml => app\src\main\resources\mediarouter\res\values-cs\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-da\strings.xml => app\src\main\resources\mediarouter\res\values-da\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-de\strings.xml => app\src\main\resources\mediarouter\res\values-de\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-el\strings.xml => app\src\main\resources\mediarouter\res\values-el\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-en-rAU\strings.xml => app\src\main\resources\mediarouter\res\values-en-rAU\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-en-rGB\strings.xml => app\src\main\resources\mediarouter\res\values-en-rGB\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-en-rIN\strings.xml => app\src\main\resources\mediarouter\res\values-en-rIN\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-es-rUS\strings.xml => app\src\main\resources\mediarouter\res\values-es-rUS\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-es\strings.xml => app\src\main\resources\mediarouter\res\values-es\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-et-rEE\strings.xml => app\src\main\resources\mediarouter\res\values-et-rEE\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-eu-rES\strings.xml => app\src\main\resources\mediarouter\res\values-eu-rES\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-fa\strings.xml => app\src\main\resources\mediarouter\res\values-fa\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-fi\strings.xml => app\src\main\resources\mediarouter\res\values-fi\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-fr-rCA\strings.xml => app\src\main\resources\mediarouter\res\values-fr-rCA\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-fr\strings.xml => app\src\main\resources\mediarouter\res\values-fr\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-gl-rES\strings.xml => app\src\main\resources\mediarouter\res\values-gl-rES\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-gu-rIN\strings.xml => app\src\main\resources\mediarouter\res\values-gu-rIN\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-hi\strings.xml => app\src\main\resources\mediarouter\res\values-hi\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-hr\strings.xml => app\src\main\resources\mediarouter\res\values-hr\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-hu\strings.xml => app\src\main\resources\mediarouter\res\values-hu\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-hy-rAM\strings.xml => app\src\main\resources\mediarouter\res\values-hy-rAM\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-in\strings.xml => app\src\main\resources\mediarouter\res\values-in\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-is-rIS\strings.xml => app\src\main\resources\mediarouter\res\values-is-rIS\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-it\strings.xml => app\src\main\resources\mediarouter\res\values-it\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-iw\strings.xml => app\src\main\resources\mediarouter\res\values-iw\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-ja\strings.xml => app\src\main\resources\mediarouter\res\values-ja\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-ka-rGE\strings.xml => app\src\main\resources\mediarouter\res\values-ka-rGE\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-kk-rKZ\strings.xml => app\src\main\resources\mediarouter\res\values-kk-rKZ\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-km-rKH\strings.xml => app\src\main\resources\mediarouter\res\values-km-rKH\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-kn-rIN\strings.xml => app\src\main\resources\mediarouter\res\values-kn-rIN\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-ko\strings.xml => app\src\main\resources\mediarouter\res\values-ko\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-ky-rKG\strings.xml => app\src\main\resources\mediarouter\res\values-ky-rKG\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-land\dimens.xml => app\src\main\resources\mediarouter\res\values-land\dimens.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-lo-rLA\strings.xml => app\src\main\resources\mediarouter\res\values-lo-rLA\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-lt\strings.xml => app\src\main\resources\mediarouter\res\values-lt\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-lv\strings.xml => app\src\main\resources\mediarouter\res\values-lv\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-mk-rMK\strings.xml => app\src\main\resources\mediarouter\res\values-mk-rMK\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-ml-rIN\strings.xml => app\src\main\resources\mediarouter\res\values-ml-rIN\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-mn-rMN\strings.xml => app\src\main\resources\mediarouter\res\values-mn-rMN\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-mr-rIN\strings.xml => app\src\main\resources\mediarouter\res\values-mr-rIN\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-ms-rMY\strings.xml => app\src\main\resources\mediarouter\res\values-ms-rMY\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-my-rMM\strings.xml => app\src\main\resources\mediarouter\res\values-my-rMM\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-nb\strings.xml => app\src\main\resources\mediarouter\res\values-nb\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-ne-rNP\strings.xml => app\src\main\resources\mediarouter\res\values-ne-rNP\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-nl\strings.xml => app\src\main\resources\mediarouter\res\values-nl\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-pa-rIN\strings.xml => app\src\main\resources\mediarouter\res\values-pa-rIN\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-pl\strings.xml => app\src\main\resources\mediarouter\res\values-pl\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-pt-rBR\strings.xml => app\src\main\resources\mediarouter\res\values-pt-rBR\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-pt-rPT\strings.xml => app\src\main\resources\mediarouter\res\values-pt-rPT\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-pt\strings.xml => app\src\main\resources\mediarouter\res\values-pt\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-ro\strings.xml => app\src\main\resources\mediarouter\res\values-ro\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-ru\strings.xml => app\src\main\resources\mediarouter\res\values-ru\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-si-rLK\strings.xml => app\src\main\resources\mediarouter\res\values-si-rLK\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-sk\strings.xml => app\src\main\resources\mediarouter\res\values-sk\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-sl\strings.xml => app\src\main\resources\mediarouter\res\values-sl\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-sq-rAL\strings.xml => app\src\main\resources\mediarouter\res\values-sq-rAL\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-sr\strings.xml => app\src\main\resources\mediarouter\res\values-sr\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-sv\strings.xml => app\src\main\resources\mediarouter\res\values-sv\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-sw600dp\dimens.xml => app\src\main\resources\mediarouter\res\values-sw600dp\dimens.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-sw720dp\dimens.xml => app\src\main\resources\mediarouter\res\values-sw720dp\dimens.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-sw\strings.xml => app\src\main\resources\mediarouter\res\values-sw\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-ta-rIN\strings.xml => app\src\main\resources\mediarouter\res\values-ta-rIN\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-te-rIN\strings.xml => app\src\main\resources\mediarouter\res\values-te-rIN\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-th\strings.xml => app\src\main\resources\mediarouter\res\values-th\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-tl\strings.xml => app\src\main\resources\mediarouter\res\values-tl\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-tr\strings.xml => app\src\main\resources\mediarouter\res\values-tr\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-uk\strings.xml => app\src\main\resources\mediarouter\res\values-uk\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-ur-rPK\strings.xml => app\src\main\resources\mediarouter\res\values-ur-rPK\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-uz-rUZ\strings.xml => app\src\main\resources\mediarouter\res\values-uz-rUZ\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-vi\strings.xml => app\src\main\resources\mediarouter\res\values-vi\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-zh-rCN\strings.xml => app\src\main\resources\mediarouter\res\values-zh-rCN\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-zh-rHK\strings.xml => app\src\main\resources\mediarouter\res\values-zh-rHK\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-zh-rTW\strings.xml => app\src\main\resources\mediarouter\res\values-zh-rTW\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values-zu\strings.xml => app\src\main\resources\mediarouter\res\values-zu\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values\attrs.xml => app\src\main\resources\mediarouter\res\values\attrs.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values\dimens.xml => app\src\main\resources\mediarouter\res\values\dimens.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values\strings.xml => app\src\main\resources\mediarouter\res\values\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values\styles.xml => app\src\main\resources\mediarouter\res\values\styles.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\res\values\themes.xml => app\src\main\resources\mediarouter\res\values\themes.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\mediarouter\src\.readme => app\src\main\resources\mediarouter\src\.readme
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\palette\.classpath => app\src\main\resources\palette\.classpath
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\palette\.project => app\src\main\resources\palette\.project
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\palette\AndroidManifest.xml => app\src\main\resources\palette\AndroidManifest.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\palette\project.properties => app\src\main\resources\palette\project.properties
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\palette\README.txt => app\src\main\resources\palette\README.txt
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\preference\AndroidManifest.xml => app\src\main\resources\preference\AndroidManifest.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\preference\res\layout-v11\preference.xml => app\src\main\resources\preference\res\layout-v11\preference.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\preference\res\layout\preference.xml => app\src\main\resources\preference\res\layout\preference.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\preference\res\layout\preference_category.xml => app\src\main\resources\preference\res\layout\preference_category.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\preference\res\layout\preference_dialog_edittext.xml => app\src\main\resources\preference\res\layout\preference_dialog_edittext.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\preference\res\layout\preference_information.xml => app\src\main\resources\preference\res\layout\preference_information.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\preference\res\layout\preference_list_fragment.xml => app\src\main\resources\preference\res\layout\preference_list_fragment.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\preference\res\layout\preference_recyclerview.xml => app\src\main\resources\preference\res\layout\preference_recyclerview.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\preference\res\layout\preference_widget_checkbox.xml => app\src\main\resources\preference\res\layout\preference_widget_checkbox.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\preference\res\layout\preference_widget_switch_compat.xml => app\src\main\resources\preference\res\layout\preference_widget_switch_compat.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\preference\res\values-v17\styles.xml => app\src\main\resources\preference\res\values-v17\styles.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\preference\res\values\attrs.xml => app\src\main\resources\preference\res\values\attrs.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\preference\res\values\strings.xml => app\src\main\resources\preference\res\values\strings.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\preference\res\values\styles.xml => app\src\main\resources\preference\res\values\styles.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\preference\res\values\themes.xml => app\src\main\resources\preference\res\values\themes.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\recyclerview\AndroidManifest.xml => app\src\main\resources\recyclerview\AndroidManifest.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\recyclerview\README.txt => app\src\main\resources\recyclerview\README.txt
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\recyclerview\res\values\attrs.xml => app\src\main\resources\recyclerview\res\values\attrs.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\recyclerview\res\values\dimens.xml => app\src\main\resources\recyclerview\res\values\dimens.xml
+* C:\Program Files (x86)\Android\android-sdk\extras\android\support\v7\recyclerview\res\values\ids.xml => app\src\main\resources\recyclerview\res\values\ids.xml
+* AndroidManifest.xml => app\src\main\AndroidManifest.xml
+* assets\ => app\src\main\assets
+* res\ => app\src\main\res\
+* src\ => app\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)
